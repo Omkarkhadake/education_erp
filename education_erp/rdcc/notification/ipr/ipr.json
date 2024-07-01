@@ -1,0 +1,44 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2024-06-28 09:34:32.082461",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "IPR",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "message_type": "HTML",
+ "modified": "2024-06-28 09:34:32.082461",
+ "modified_by": "Administrator",
+ "module": "RDCC",
+ "name": "IPR",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.status ==\"Pending\"",
+   "receiver_by_document_field": "ipr_approver_hod"
+  },
+  {
+   "condition": "doc.status ==\"Pending\"",
+   "receiver_by_document_field": "ipr_approver_po"
+  },
+  {
+   "condition": "doc.status ==\"Approved\"",
+   "receiver_by_document_field": "owner"
+  },
+  {
+   "condition": "doc.status ==\"Rejected\"",
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Info Ppcrc",
+ "sender_email": "info.ppcrc@isquareit.edu.in",
+ "subject": "{{doc.ipr}}-{{doc.employee_id}}-{{doc.instructors}}-{{doc.status}} Kindly Check",
+ "value_changed": "status"
+}

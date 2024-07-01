@@ -1,0 +1,446 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{employee_id}-{instructor}-{####}",
+ "creation": "2024-06-27 20:33:38.649309",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_tab",
+  "section_break_7gdk",
+  "grant",
+  "grants_status",
+  "start_date",
+  "amended_from",
+  "instructor",
+  "co_principal_inventors",
+  "column_break_dobj",
+  "academic_year",
+  "fiscal_year",
+  "end_date",
+  "employee_id",
+  "program",
+  "grants_approver_hod",
+  "grants_approver_po",
+  "tab_2_tab",
+  "name_of_the_principal_investigator",
+  "name_of_project",
+  "amount_sanctioned",
+  "name_of_the_funding_agency",
+  "status",
+  "column_break_pklb",
+  "department_of_principal_investigator",
+  "date_of_award",
+  "duration_of_the_project",
+  "research_type",
+  "attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_7gdk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Grant",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "overview_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "grant",
+   "fieldtype": "Link",
+   "label": "Grant",
+   "options": "Grants Type"
+  },
+  {
+   "fieldname": "grants_status",
+   "fieldtype": "Select",
+   "label": "Grants Status",
+   "options": "\nOngoing\nCompleted"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "label": "Instructor",
+   "options": "Instructor"
+  },
+  {
+   "columns": 3,
+   "fieldname": "co_principal_inventors",
+   "fieldtype": "Table",
+   "label": "Co-Principal Inventor's",
+   "options": "Coauthors"
+  },
+  {
+   "fieldname": "column_break_dobj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "label": "Fiscal Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fetch_from": "instructor.employee",
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Id",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "instructor.custom_program",
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "program.custom_head_of_department_user_id",
+   "fieldname": "grants_approver_hod",
+   "fieldtype": "Link",
+   "label": "Grants Approver (HoD)",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "program.custom_portfolio_coordinator_user_id",
+   "fieldname": "grants_approver_po",
+   "fieldtype": "Link",
+   "label": "Grants Approver (PCO)",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "instructor.instructor_name",
+   "fieldname": "name_of_the_principal_investigator",
+   "fieldtype": "Data",
+   "label": "Name of the Principal Investigator",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pklb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "instructor.custom_program",
+   "fieldname": "department_of_principal_investigator",
+   "fieldtype": "Link",
+   "label": "Department of Principal Investigator",
+   "options": "Program",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name_of_project",
+   "fieldtype": "Data",
+   "label": "Name of project"
+  },
+  {
+   "fieldname": "date_of_award",
+   "fieldtype": "Date",
+   "label": "Date of Award"
+  },
+  {
+   "fieldname": "amount_sanctioned",
+   "fieldtype": "Currency",
+   "label": "Amount Sanctioned",
+   "non_negative": 1,
+   "options": "Company:company:default_currency",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration_of_the_project",
+   "fieldtype": "Data",
+   "label": "Duration of the project ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name_of_the_funding_agency",
+   "fieldtype": "Data",
+   "label": "Name of the Funding Agency"
+  },
+  {
+   "fieldname": "research_type",
+   "fieldtype": "Select",
+   "label": "Type of Funding Agency",
+   "options": "\nCentral Government\nState Government\nOverseas Organization\nPrivate Company\nTrust\nOthers"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nPending\nApproved\nRejected",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "description": "(Max 25 MB)",
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2024-06-28 01:38:21.819848",
+ "modified_by": "Administrator",
+ "module": "RDCC",
+ "name": "Grant",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head of Department",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Trust Office Employee",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Coordinator - Administration and Operations",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Office Assistant",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manager - Hostel Administration",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sr. Executive - Finance",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sr. Executive - Office of President",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sr. Coordinator",
+   "share": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Executive Secretary",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Media & Communications Associate",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dean - Administration",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Portfolio Coordinator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head of Research and Development",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Registrar",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head of Trust",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

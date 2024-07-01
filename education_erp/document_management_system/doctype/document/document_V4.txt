@@ -1,0 +1,198 @@
+This code Contain new fetchure that can capture the attchment format from attchment field 
+
+
+
+
+
+frappe.ui.form.on("Document", {
+    onload: function (frm) {
+        if (frm.is_new()) {
+            // Set the document creation date to today's date
+            frm.set_value('document_creation_date', frappe.datetime.nowdate());
+            frm.set_intro('Upload New Document');
+
+            // Fetch the user's email ID and employee ID
+            frappe.call({
+                method: "education_erp.document_management_system.doctype.document.document.get_user_mail_id",
+                args: {
+                    user: frappe.session.user
+                },
+                callback: function (response) {
+                    if (response.message) {
+                        const { email, employee_id, employee_name, designation } = response.message;
+                        frm.set_value({
+                            'employee': employee_id,
+                            'email_id': email,
+                            'employee_name': employee_name,
+                            'designation': designation
+                        });
+                    } else {
+                        frappe.msgprint("Email ID not found or error occurred.");
+                    }
+                },
+                error: function (xhr, status, error) {
+                    frappe.msgprint("Error fetching user's email ID.");
+                    console.error("Error fetching user's email ID:", error);
+                }
+            });
+        }
+
+        // Attach an event listener to capture the format of the attached file
+        frm.get_field('attachment').df.onchange = function() {
+            const file = frm.get_field('attachment').value;
+            if (file) {
+                const fileFormat = file.split('.').pop();
+                frm.set_value('document_format', fileFormat);
+            }
+        };
+    },
+
+    refresh: function (frm) {
+        frm.set_query('document_sub_category', function (doc) {
+            return {
+                filters: {
+                    document_category: doc.document_category
+                }
+            }
+        });
+
+        frm.set_query('document_types', function (doc) {
+            return {
+                filters: {
+                    document_sub_category: doc.document_sub_category
+                }
+            }
+        });
+
+        frm.set_query('document_name', function (doc) {
+            return {
+                filters: {
+                    document_type: doc.document_types
+                }
+            }
+        });
+
+        // Remove existing custom buttons
+        frm.remove_custom_button(__('Approve'));
+        frm.remove_custom_button(__('Reject'));
+
+        // Hide remove rows button if user is not a System Manager
+        if (!frappe.user.has_role('System Manager')) {
+            frm.fields_dict['document_version_list'].grid.wrapper.find('.grid-remove-rows').hide();
+        }
+
+        // Add Approve and Reject buttons if the document is pending and the user is the approving authority
+        if (frm.doc.status === 'Pending' && frappe.session.user === frm.doc.approving_authority_id) {
+            frm.add_custom_button(__('Approve'), function () {
+                frappe.confirm(`Are you sure you want to approve "${frm.doc.document_name}" ?`, function () {
+                    frm.call('approve').then(() => {
+                        frm.reload_doc();
+                    });
+                });
+            }, __("Action"));
+
+            frm.add_custom_button(__('Reject'), function () {
+                frappe.confirm(`Are you sure you want to reject "${frm.doc.document_name}" ?`, function () {
+                    frm.call('reject').then(() => {
+                        frm.reload_doc();
+                    });
+                });
+            }, __("Action"));
+        }
+
+        // Show "Request for this document" button only when document status is Submitted and Approved
+        if (frm.doc.docstatus === 1 && frm.doc.status === "Approved") {
+            frm.add_custom_button(__("Request for this document"), function () {
+                frappe.confirm(`Are you sure you want to request "${frm.doc.document_name}" ?`, function () {
+                    const documentId = frm.doc.name;
+
+                    if (documentId) {
+                        // Call server-side method to fetch document details
+                        frappe.call({
+                            method: "education_erp.document_management_system.doctype.document.document.get_document_details",
+                            args: { doc_id: documentId },
+                            callback: function (response) {
+                                if (response.message) {
+                                    const { document_name, document_number, custodian_of_original_document, custodian_email } = response.message;
+                                    // Create a new "Movement of Original Document" and set values
+                                    frappe.model.with_doctype('Movement of Original Document', function () {
+                                        let doc = frappe.model.get_new_doc('Movement of Original Document');
+                                        Object.assign(doc, {
+                                            document_name,
+                                            document_number,
+                                            default_custodian: custodian_of_original_document,
+                                            default_custodian_email: custodian_email
+                                        });
+                                        frappe.set_route("Form", "Movement of Original Document", doc.name);
+                                    });
+                                } else {
+                                    frappe.msgprint("Document not found or error occurred.");
+                                }
+                            },
+                            error: function (xhr, status, error) {
+                                frappe.msgprint("Error fetching document details. Please try again.");
+                                console.error("Error fetching document details:", error);
+                            }
+                        });
+
+                        // Fetch user's email ID and employee ID
+                        frappe.call({
+                            method: "education_erp.document_management_system.doctype.document.document.get_user_mail_id",
+                            args: { user: frappe.session.user },
+                            callback: function (response) {
+                                if (response.message) {
+                                    console.log("Email ID:", response.message.email);
+                                    console.log("Employee ID:", response.message.employee_id);
+                                } else {
+                                    frappe.msgprint("Email ID not found or error occurred.");
+                                }
+                            },
+                            error: function (xhr, status, error) {
+                                frappe.msgprint("Error fetching user's email ID.");
+                                console.error("Error fetching user's email ID:", error);
+                            }
+                        });
+                    } else {
+                        frappe.msgprint("Document ID is empty.");
+                    }
+                });
+            });
+        }
+    },
+
+    document_category: function (frm) {
+        frm.set_query('document_sub_category', function (doc) {
+            return {
+                filters: {
+                    document_category: doc.document_category
+                }
+            };
+        });
+    },
+
+    document_sub_category: function (frm) {
+        frm.set_query('document_types', function (doc) {
+            return {
+                filters: {
+                    document_sub_category: doc.document_sub_category
+                }
+            };
+        });
+    },
+
+    document_type: function (frm) {
+        frm.set_query('document_name', function (doc) {
+            return {
+                filters: {
+                    document_type: doc.document_types
+                }
+            }
+        });
+    },
+
+    on_submit: function (frm) {
+        frm.set_value('status', 'Pending');
+        frm.save_or_update();
+    },
+});
+

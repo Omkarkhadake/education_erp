@@ -1,0 +1,65 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-06-28 00:06:47.126705",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-06-28 00:06:47.126705",
+ "modified_by": "Administrator",
+ "module": "Document Management System",
+ "name": "Document Management Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Document",
+ "report_name": "Document Management Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Trust Office Employee"
+  },
+  {
+   "role": "Coordinator - Administration and Operations"
+  },
+  {
+   "role": "Office Assistant"
+  },
+  {
+   "role": "Manager - Hostel Administration"
+  },
+  {
+   "role": "Sr. Coordinator"
+  },
+  {
+   "role": "Sr. Executive - Finance"
+  },
+  {
+   "role": "Sr. Executive - Office of President"
+  },
+  {
+   "role": "Executive Secretary"
+  },
+  {
+   "role": "Media & Communications Associate"
+  },
+  {
+   "role": "Dean - Administration"
+  },
+  {
+   "role": "Principal"
+  },
+  {
+   "role": "Registrar"
+  },
+  {
+   "role": "Head of Trust"
+  }
+ ]
+}

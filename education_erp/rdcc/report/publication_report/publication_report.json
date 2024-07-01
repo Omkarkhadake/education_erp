@@ -1,0 +1,74 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-06-27 18:41:10.476941",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-06-27 18:41:15.537546",
+ "modified_by": "Administrator",
+ "module": "RDCC",
+ "name": "Publication Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Publication",
+ "report_name": "Publication Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Head of Department"
+  },
+  {
+   "role": "Trust Office Employee"
+  },
+  {
+   "role": "Coordinator - Administration and Operations"
+  },
+  {
+   "role": "Office Assistant"
+  },
+  {
+   "role": "Manager - Hostel Administration"
+  },
+  {
+   "role": "Sr. Executive - Finance"
+  },
+  {
+   "role": "Sr. Executive - Office of President"
+  },
+  {
+   "role": "Sr. Coordinator"
+  },
+  {
+   "role": "Executive Secretary"
+  },
+  {
+   "role": "Media & Communications Associate"
+  },
+  {
+   "role": "Dean - Administration"
+  },
+  {
+   "role": "Portfolio Coordinator"
+  },
+  {
+   "role": "Principal"
+  },
+  {
+   "role": "Head of Research and Development"
+  },
+  {
+   "role": "Registrar"
+  },
+  {
+   "role": "Head of Trust"
+  }
+ ]
+}

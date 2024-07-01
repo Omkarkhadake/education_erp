@@ -1,0 +1,467 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:document_name",
+ "creation": "2024-06-27 22:41:03.991214",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "document_details_tab",
+  "entity_name",
+  "fiscal_year",
+  "employee",
+  "designation",
+  "column_break_lmqg",
+  "document_creation_date",
+  "employee_name",
+  "email_id",
+  "employee_details_tab",
+  "section_break_adtc",
+  "government_bodies_and_regulators",
+  "approving_authority_id",
+  "document_types",
+  "document_date",
+  "custodian_email",
+  "document_access_profile",
+  "document_status",
+  "document_start_date",
+  "website_reference",
+  "status",
+  "document_version_list",
+  "column_break_bwyd",
+  "document_category",
+  "document_sub_category",
+  "document_name",
+  "document_number",
+  "application_number",
+  "custodian_of_original_document",
+  "document_end_date",
+  "document_source",
+  "classification",
+  "remarks",
+  "attachment",
+  "document_format",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_adtc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Document",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Document Details"
+  },
+  {
+   "fieldname": "document_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "entity_name",
+   "fieldtype": "Link",
+   "label": "Entity Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_bwyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "document_creation_date",
+   "fieldtype": "Date",
+   "label": "Document Creation Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "label": "Fiscal Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "label": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Email-id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "government_bodies_and_regulators",
+   "fieldtype": "Link",
+   "label": "Government Bodies and Regulators",
+   "options": "Government Bodies and Regulators"
+  },
+  {
+   "fieldname": "column_break_lmqg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_category",
+   "fieldtype": "Link",
+   "label": "Document Category",
+   "options": "Document Category"
+  },
+  {
+   "fetch_from": "document_category.approving_authority",
+   "fieldname": "approving_authority_id",
+   "fieldtype": "Data",
+   "label": "Approving Authority For Document Upload",
+   "read_only": 1
+  },
+  {
+   "fieldname": "document_sub_category",
+   "fieldtype": "Link",
+   "label": "Sub-Category",
+   "options": "Document Sub-Category"
+  },
+  {
+   "fieldname": "document_types",
+   "fieldtype": "Link",
+   "label": "Type / Batch / Class / Division",
+   "options": "Document Types"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Document Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "document_date",
+   "fieldtype": "Date",
+   "label": "Document Date"
+  },
+  {
+   "fieldname": "document_number",
+   "fieldtype": "Data",
+   "label": "Document / Order Number"
+  },
+  {
+   "fieldname": "custodian_email",
+   "fieldtype": "Link",
+   "label": "Custodian Email",
+   "options": "User"
+  },
+  {
+   "fieldname": "application_number",
+   "fieldtype": "Data",
+   "label": "Application / Reference / Registration / Tracking Number"
+  },
+  {
+   "fieldname": "document_access_profile",
+   "fieldtype": "Select",
+   "label": "Access Profile",
+   "options": "\nConfidential\nPublic\nPrivate\nGeneral"
+  },
+  {
+   "fetch_from": "custodian_email.full_name",
+   "fieldname": "custodian_of_original_document",
+   "fieldtype": "Data",
+   "label": "Custodian of Original Document"
+  },
+  {
+   "fieldname": "document_status",
+   "fieldtype": "Select",
+   "label": "Document Status",
+   "options": "\nDraft\nProvisional\nFinal"
+  },
+  {
+   "depends_on": "eval:doc.status == \"Draft\" ||doc.status == \"Pending\" ||doc.status == \"Approved\" ||doc.status == \"Rejected\"",
+   "fieldname": "document_format",
+   "fieldtype": "Data",
+   "label": "Format",
+   "read_only": 1
+  },
+  {
+   "fieldname": "document_start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "document_end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "website_reference",
+   "fieldtype": "Data",
+   "label": "Website Reference"
+  },
+  {
+   "fieldname": "document_source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nPending\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "classification",
+   "fieldtype": "Select",
+   "label": "Classification",
+   "options": "\nOriginal\nCertified Copy\nTrue Copy\nNotarized Copy\nSelf-attested Photocopy"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "document_version_list",
+   "fieldtype": "Table",
+   "label": "Document Version List",
+   "options": "Document Revision Child Table"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2024-07-01 13:32:41.414884",
+ "modified_by": "Administrator",
+ "module": "Document Management System",
+ "name": "Document",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Trust Office Employee",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Coordinator - Administration and Operations",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Office Assistant",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manager - Hostel Administration",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sr. Coordinator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sr. Executive - Finance",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sr. Executive - Office of President",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Executive Secretary",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Media & Communications Associate",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dean - Administration",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Principal",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Registrar",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head of Trust",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

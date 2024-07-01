@@ -1,0 +1,74 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-06-27 20:21:43.412471",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-06-27 20:21:43.412471",
+ "modified_by": "Administrator",
+ "module": "RDCC",
+ "name": "IPR Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "IPR",
+ "report_name": "IPR Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Head of Department"
+  },
+  {
+   "role": "Trust Office Employee"
+  },
+  {
+   "role": "Coordinator - Administration and Operations"
+  },
+  {
+   "role": "Office Assistant"
+  },
+  {
+   "role": "Manager - Hostel Administration"
+  },
+  {
+   "role": "Sr. Coordinator"
+  },
+  {
+   "role": "Sr. Executive - Finance"
+  },
+  {
+   "role": "Sr. Executive - Office of President"
+  },
+  {
+   "role": "Executive Secretary"
+  },
+  {
+   "role": "Media & Communications Associate"
+  },
+  {
+   "role": "Dean - Administration"
+  },
+  {
+   "role": "Portfolio Coordinator"
+  },
+  {
+   "role": "Head of Research and Development"
+  },
+  {
+   "role": "Registrar"
+  },
+  {
+   "role": "Head of Trust"
+  },
+  {
+   "role": "Principal"
+  }
+ ]
+}

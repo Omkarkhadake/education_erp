@@ -53,9 +53,6 @@ frappe.ui.form.on("Document", {
             return { filters: { document_sub_category: doc.document_sub_category } };
         });
 
-        // frm.set_query('document_name', function (doc) {
-        //     return { filters: { document_type: doc.document_types } };
-        // });
 
         frm.remove_custom_button(__('Approve'));
         frm.remove_custom_button(__('Reject'));
@@ -119,17 +116,6 @@ frappe.ui.form.on("Document", {
         });
     },
 
-    // document_type: function (frm) {
-    //     frm.set_query('document_name', function (doc) {
-    //         return { filters: { document_type: doc.document_types } };
-    //     });
-    // },
-
-    // document_name: function (frm) {
-    //     frm.doc.document_version_list.forEach(row => {
-    //         frappe.model.set_value(row.doctype, row.name, 'name_of_document', frm.doc.document_name);
-    //     });
-    // },
 
     on_submit: function (frm) {
         frm.set_value('status', 'Pending');

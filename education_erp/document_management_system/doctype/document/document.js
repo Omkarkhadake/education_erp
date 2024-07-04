@@ -125,11 +125,11 @@ frappe.ui.form.on("Document", {
     //     });
     // },
 
-    document_name: function (frm) {
-        frm.doc.document_version_list.forEach(row => {
-            frappe.model.set_value(row.doctype, row.name, 'name_of_document', frm.doc.document_name);
-        });
-    },
+    // document_name: function (frm) {
+    //     frm.doc.document_version_list.forEach(row => {
+    //         frappe.model.set_value(row.doctype, row.name, 'name_of_document', frm.doc.document_name);
+    //     });
+    // },
 
     on_submit: function (frm) {
         frm.set_value('status', 'Pending');
@@ -137,12 +137,6 @@ frappe.ui.form.on("Document", {
     },
 });
 
-frappe.ui.form.on('Document Version List', {
-    document_version_list_add: function (frm, cdt, cdn) {
-        const row = locals[cdt][cdn];
-        frappe.model.set_value(cdt, cdn, 'name_of_document', frm.doc.document_name);
-    }
-});
 function checkDocumentAvailability(documentDetails) {
     frappe.call({
         method: "education_erp.document_management_system.doctype.document.document.get_movement_of_document_list",

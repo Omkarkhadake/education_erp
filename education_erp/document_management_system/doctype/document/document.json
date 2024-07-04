@@ -24,7 +24,6 @@
   "document_types",
   "document_date",
   "custodian_email",
-  "document_access_profile",
   "document_status",
   "document_start_date",
   "website_reference",
@@ -35,11 +34,16 @@
   "document_sub_category",
   "document_name",
   "document_number",
-  "application_number",
   "custodian_of_original_document",
+  "application_number",
   "document_end_date",
   "document_source",
-  "classification",
+  "original",
+  "certified_copy",
+  "true_copy",
+  "notarized_copy",
+  "self_attested_photocopy",
+  "carbon_copy",
   "attachment",
   "document_format",
   "amended_from"
@@ -72,8 +76,10 @@
   {
    "fieldname": "entity_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Entity Name",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_bwyd",
@@ -120,8 +126,10 @@
   {
    "fieldname": "government_bodies_and_regulators",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Government Bodies and Regulators",
-   "options": "Government Bodies and Regulators"
+   "options": "Government Bodies and Regulators",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_lmqg",
@@ -131,59 +139,64 @@
    "fieldname": "document_category",
    "fieldtype": "Link",
    "label": "Document Category",
-   "options": "Document Category"
+   "options": "Document Category",
+   "reqd": 1
   },
   {
    "fetch_from": "document_category.approving_authority",
    "fieldname": "approving_authority_id",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Approving Authority For Document Upload",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "document_sub_category",
    "fieldtype": "Link",
    "label": "Sub-Category",
-   "options": "Document Sub-Category"
+   "options": "Document Sub-Category",
+   "reqd": 1
   },
   {
    "fieldname": "document_types",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Type / Batch / Class / Division",
-   "options": "Document Types"
+   "options": "Document Types",
+   "reqd": 1
   },
   {
    "fieldname": "document_name",
    "fieldtype": "Data",
    "label": "Name",
+   "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "document_date",
    "fieldtype": "Date",
-   "label": "Document Date"
+   "label": "Document Date",
+   "reqd": 1
   },
   {
    "fieldname": "document_number",
    "fieldtype": "Data",
-   "label": "Document / Order Number"
+   "label": "Document / Order Number",
+   "reqd": 1
   },
   {
    "fieldname": "custodian_email",
    "fieldtype": "Link",
    "label": "Custodian Email",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "application_number",
    "fieldtype": "Data",
-   "label": "Application / Reference / Registration / Tracking Number"
-  },
-  {
-   "fieldname": "document_access_profile",
-   "fieldtype": "Select",
-   "label": "Access Profile",
-   "options": "\nConfidential\nPublic\nPrivate\nGeneral"
+   "label": "Application / Reference / Registration / Tracking Number",
+   "reqd": 1
   },
   {
    "fetch_from": "custodian_email.full_name",
@@ -195,9 +208,11 @@
    "fieldname": "document_status",
    "fieldtype": "Select",
    "label": "Document Status",
-   "options": "\nDraft\nProvisional\nFinal"
+   "options": "\nDraft\nProvisional\nFinal",
+   "reqd": 1
   },
   {
+   "allow_on_submit": 1,
    "depends_on": "eval:doc.status == \"Draft\" ||doc.status == \"Pending\" ||doc.status == \"Approved\" ||doc.status == \"Rejected\"",
    "fieldname": "document_format",
    "fieldtype": "Data",
@@ -207,22 +222,26 @@
   {
    "fieldname": "document_start_date",
    "fieldtype": "Date",
-   "label": "Start Date"
+   "label": "Start Date",
+   "reqd": 1
   },
   {
    "fieldname": "document_end_date",
    "fieldtype": "Date",
-   "label": "End Date"
+   "label": "End Date",
+   "reqd": 1
   },
   {
    "fieldname": "website_reference",
    "fieldtype": "Data",
-   "label": "Website Reference"
+   "label": "Website Reference",
+   "reqd": 1
   },
   {
    "fieldname": "document_source",
    "fieldtype": "Data",
-   "label": "Source"
+   "label": "Source",
+   "reqd": 1
   },
   {
    "allow_on_submit": 1,
@@ -234,27 +253,65 @@
    "read_only": 1
   },
   {
-   "fieldname": "classification",
-   "fieldtype": "Select",
-   "label": "Classification",
-   "options": "\nOriginal\nCertified Copy\nTrue Copy\nNotarized Copy\nSelf-attested Photocopy\nCarbon Copy"
-  },
-  {
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "attachment",
    "fieldtype": "Attach",
-   "label": "Attachment"
+   "label": "Attachment",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "original",
+   "fieldtype": "Check",
+   "label": "Original"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "certified_copy",
+   "fieldtype": "Check",
+   "label": "Certified Copy"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "true_copy",
+   "fieldtype": "Check",
+   "label": "True Copy"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "notarized_copy",
+   "fieldtype": "Check",
+   "label": "Notarized Copy"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "self_attested_photocopy",
+   "fieldtype": "Check",
+   "label": "Self Attested Photocopy"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "carbon_copy",
+   "fieldtype": "Check",
+   "label": "Carbon Copy"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2024-07-03 15:06:42.430312",
+ "modified": "2024-07-04 21:06:59.606153",
  "modified_by": "Administrator",
  "module": "Document Management System",
  "name": "Document",

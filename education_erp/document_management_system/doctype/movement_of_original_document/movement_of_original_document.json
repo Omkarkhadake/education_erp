@@ -23,6 +23,7 @@
   "date_of_movement",
   "document_end_date",
   "document_receiver",
+  "document_receiver_name",
   "status",
   "approval_date",
   "date_of_document_returned_to_custodian"
@@ -143,13 +144,19 @@
    "fieldtype": "Date",
    "label": "Approval Date",
    "read_only": 1
+  },
+  {
+   "fetch_from": "document_receiver.full_name",
+   "fieldname": "document_receiver_name",
+   "fieldtype": "Data",
+   "label": "Document Receiver Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2024-07-01 17:57:54.417619",
+ "modified": "2024-07-03 09:10:06.926616",
  "modified_by": "Administrator",
  "module": "Document Management System",
  "name": "Movement of Original Document",

@@ -19,17 +19,17 @@ class MovementofOriginalDocument(Document):
     @frappe.whitelist()
     def reject(self):
         self.status = "Rejected"
-        self.save()	
+        self.save()
 
     @frappe.whitelist()
     def received(self):
         self.status = "Received"
-        self.save()	
-        
+        self.save()
+
     @frappe.whitelist()
     def received_back(self):
         self.status = "Returned"
-        self.save()	        
+        self.save()
 
 @frappe.whitelist()
 def get_user_mail_id(user=None):
@@ -46,9 +46,6 @@ def get_user_mail_id(user=None):
         frappe.log_error(frappe.get_traceback(), "Failed to fetch user details")
         return None
 
-
-
-# movement_of_original_document.py
 
 import frappe
 from frappe.model.document import Document
@@ -68,4 +65,4 @@ def get_movement_details(doc_id):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Failed to fetch document details")
         return None
-      
+

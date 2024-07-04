@@ -82,7 +82,8 @@
    "fieldname": "academic_year",
    "fieldtype": "Link",
    "label": "Academic Year",
-   "options": "Academic Year"
+   "options": "Academic Year",
+   "reqd": 1
   },
   {
    "fieldname": "instructor",
@@ -97,7 +98,8 @@
    "fieldname": "employee_id",
    "fieldtype": "Data",
    "label": "Employee Id",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_lxoj",
@@ -109,12 +111,14 @@
    "fieldtype": "Link",
    "label": "Program",
    "options": "Program",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "Title",
+   "reqd": 1
   },
   {
    "fetch_from": "program.custom_head_of_department_user_id",
@@ -122,7 +126,8 @@
    "fieldtype": "Link",
    "label": "Publication Approver (HoD)",
    "options": "User",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "depends_on": "eval:doc.publication== 'Journal';",
@@ -142,17 +147,20 @@
    "fieldname": "financial_year",
    "fieldtype": "Link",
    "label": "Financial Year",
-   "options": "Fiscal Year"
+   "options": "Fiscal Year",
+   "reqd": 1
   },
   {
    "fieldname": "date_of_publication",
    "fieldtype": "Date",
-   "label": "Date of Publication"
+   "label": "Date of Publication",
+   "reqd": 1
   },
   {
    "fieldname": "place_of_publication",
    "fieldtype": "Data",
-   "label": "Place of Publication (City, Country)"
+   "label": "Place of Publication (City, Country)",
+   "reqd": 1
   },
   {
    "fetch_from": "program.custom_portfolio_coordinator_user_id",
@@ -160,7 +168,8 @@
    "fieldtype": "Link",
    "label": "Publication Approver (PCO)",
    "options": "User",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_njnw",
@@ -180,13 +189,15 @@
   {
    "fieldname": "publisher",
    "fieldtype": "Data",
-   "label": "Publisher"
+   "label": "Publisher",
+   "reqd": 1
   },
   {
    "fieldname": "is_ugc_care_listed_",
    "fieldtype": "Select",
    "label": "Is UGC Care Listed ?",
-   "options": "\nYes\nNo"
+   "options": "\nYes\nNo",
+   "reqd": 1
   },
   {
    "depends_on": "eval:doc.is_ugc_care_listed_== 'Yes';",
@@ -198,7 +209,8 @@
   {
    "fieldname": "page_numbers",
    "fieldtype": "Data",
-   "label": "Page Number"
+   "label": "Page Number",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_kwgr",
@@ -207,12 +219,14 @@
   {
    "fieldname": "citation",
    "fieldtype": "Data",
-   "label": "Citation"
+   "label": "Citation",
+   "reqd": 1
   },
   {
    "fieldname": "volume",
    "fieldtype": "Data",
-   "label": "Volume"
+   "label": "Volume",
+   "reqd": 1
   },
   {
    "depends_on": "eval:doc.publication== 'Journal';",
@@ -226,6 +240,7 @@
    "default": "Draft",
    "fieldname": "status",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Status",
    "options": "\nDraft\nPending\nApproved\nRejected",
    "read_only": 1
@@ -233,28 +248,33 @@
   {
    "fieldname": "impact_factor",
    "fieldtype": "Data",
-   "label": "Impact Factor"
+   "label": "Impact Factor",
+   "reqd": 1
   },
   {
    "fieldname": "issn_isbn",
    "fieldtype": "Data",
-   "label": "ISSN/ISBN"
+   "label": "ISSN/ISBN",
+   "reqd": 1
   },
   {
    "fieldname": "linkdoi",
    "fieldtype": "Data",
-   "label": "Link/DOI"
+   "label": "Link/DOI",
+   "reqd": 1
   },
   {
    "fieldname": "indexed",
    "fieldtype": "Data",
-   "label": "Indexed in SCI/Scopus/Web of Science/IEEE, Google Scholar etc."
+   "label": "Indexed in SCI/Scopus/Web of Science/IEEE, Google Scholar etc.",
+   "reqd": 1
   },
   {
    "description": " (Attach Entire Document)",
    "fieldname": "attachment",
    "fieldtype": "Attach",
-   "label": "Attachment"
+   "label": "Attachment",
+   "reqd": 1
   },
   {
    "columns": 3,
@@ -268,7 +288,7 @@
  "is_submittable": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2024-06-28 01:35:54.621518",
+ "modified": "2024-07-03 14:33:08.347125",
  "modified_by": "Administrator",
  "module": "RDCC",
  "name": "Publication",

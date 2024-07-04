@@ -1,4 +1,11 @@
 
+
+// in given code i have added new function called as get_movement_of_document_list 
+// this check the document avability if today's date lies between from date and to date 
+// as well as if doc.status == "Returned" 
+// this new function is added 
+
+
 import frappe
 from frappe.model.document import Document
 from frappe.utils import nowdate
@@ -18,7 +25,6 @@ class Document(Document):
     def reject(self):
         self.status = "Rejected"
         self.save()
-            
 
 @frappe.whitelist()
 def get_document_details(doc_id):
@@ -68,4 +74,3 @@ def get_user_mail_id(user=None):
     except Exception as e:
         frappe.log_error(frappe.get_traceback(), "Failed to fetch user details")
         return None
-

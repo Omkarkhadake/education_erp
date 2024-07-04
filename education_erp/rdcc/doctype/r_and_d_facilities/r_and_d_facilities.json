@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-04 09:59:08.618920",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_type",
+  "name_of_particulars",
+  "column_break_bnot",
+  "cost_of_equipment__rs_in_lakhs",
+  "date_of_purchase"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Equipment Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name_of_particulars",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Particulars ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_of_equipment__rs_in_lakhs",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost of Equipment ( Rs in Lakhs)",
+   "non_negative": 1,
+   "options": "Company:company:default_currency",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_purchase",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Purchase",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bnot",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-04 10:01:41.179318",
+ "modified_by": "Administrator",
+ "module": "RDCC",
+ "name": "R and D Facilities",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

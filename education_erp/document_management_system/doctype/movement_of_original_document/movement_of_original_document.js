@@ -38,11 +38,7 @@ frappe.ui.form.on('Movement of Original Document', {
             addApproveRejectButtons(frm);
         }
 
-        if (frm.doc.status === 'Approved') {
-            // Automatically set approval_date and save the form
-            frm.set_value('approval_date', frappe.datetime.nowdate());
-            frm.save();
-        }
+
 
         if (frm.doc.status === 'Approved' && frappe.session.user === frm.doc.owner) {
             // Add Received button
@@ -51,16 +47,13 @@ frappe.ui.form.on('Movement of Original Document', {
                     frm.call('received').then(() => {
                         frm.set_value('date_of_received', frappe.datetime.now_datetime());
                         frm.save('Update');
+                        // frappe.msgprint(`New Field Recipient Date "${frappe.datetime.nowdate()}" is added, Kindly click on Update Button to Save Changes.`);
                     });
                 });
             }, __("Action"));
         }
 
-        if (frm.doc.status === 'Received') {
-            // Automatically set date_of_received and save the form
-            frm.set_value('date_of_received', frappe.datetime.now_datetime());
-            frm.save();
-        }
+
 
         if (frm.doc.status === 'Received' && frappe.session.user === default_custodian_email) {
             // Add Returned button
@@ -74,11 +67,6 @@ frappe.ui.form.on('Movement of Original Document', {
             }, __("Action"));
         }
 
-        if (frm.doc.status === 'Returned') {
-            // Automatically set date_of_received and save the form
-            frm.set_value('date_of_document_returned_to_custodian', frappe.datetime.now_datetime());
-            frm.save_or_update();
-        }
     }
 });
 

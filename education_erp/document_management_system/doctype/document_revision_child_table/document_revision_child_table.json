@@ -6,21 +6,12 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name_of_document",
   "version",
   "document_start_date",
   "document_end_date",
   "attachment"
  ],
  "fields": [
-  {
-   "fieldname": "name_of_document",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Name of Document",
-   "options": "Document Name",
-   "reqd": 1
-  },
   {
    "fieldname": "version",
    "fieldtype": "Int",
@@ -51,7 +42,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-06-30 15:34:27.346620",
+ "modified": "2024-07-02 11:55:43.197339",
  "modified_by": "Administrator",
  "module": "Document Management System",
  "name": "Document Revision Child Table",

@@ -66,24 +66,28 @@
    "fieldname": "grant",
    "fieldtype": "Link",
    "label": "Grant",
-   "options": "Grants Type"
+   "options": "Grants Type",
+   "reqd": 1
   },
   {
    "fieldname": "grants_status",
    "fieldtype": "Select",
    "label": "Grants Status",
-   "options": "\nOngoing\nCompleted"
+   "options": "\nOngoing\nCompleted",
+   "reqd": 1
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "Start Date"
+   "label": "Start Date",
+   "reqd": 1
   },
   {
    "fieldname": "instructor",
    "fieldtype": "Link",
    "label": "Instructor",
-   "options": "Instructor"
+   "options": "Instructor",
+   "reqd": 1
   },
   {
    "columns": 3,
@@ -100,18 +104,21 @@
    "fieldname": "academic_year",
    "fieldtype": "Link",
    "label": "Academic Year",
-   "options": "Academic Year"
+   "options": "Academic Year",
+   "reqd": 1
   },
   {
    "fieldname": "fiscal_year",
    "fieldtype": "Link",
    "label": "Fiscal Year",
-   "options": "Fiscal Year"
+   "options": "Fiscal Year",
+   "reqd": 1
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "End Date"
+   "label": "End Date",
+   "reqd": 1
   },
   {
    "fetch_from": "instructor.employee",
@@ -154,7 +161,8 @@
    "fieldname": "name_of_the_principal_investigator",
    "fieldtype": "Data",
    "label": "Name of the Principal Investigator",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_pklb",
@@ -166,17 +174,20 @@
    "fieldtype": "Link",
    "label": "Department of Principal Investigator",
    "options": "Program",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "name_of_project",
    "fieldtype": "Data",
-   "label": "Name of project"
+   "label": "Name of project",
+   "reqd": 1
   },
   {
    "fieldname": "date_of_award",
    "fieldtype": "Date",
-   "label": "Date of Award"
+   "label": "Date of Award",
+   "reqd": 1
   },
   {
    "fieldname": "amount_sanctioned",
@@ -191,41 +202,45 @@
    "fieldname": "duration_of_the_project",
    "fieldtype": "Data",
    "label": "Duration of the project ",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "name_of_the_funding_agency",
    "fieldtype": "Data",
-   "label": "Name of the Funding Agency"
+   "label": "Name of the Funding Agency",
+   "reqd": 1
   },
   {
    "fieldname": "research_type",
    "fieldtype": "Select",
    "label": "Type of Funding Agency",
-   "options": "\nCentral Government\nState Government\nOverseas Organization\nPrivate Company\nTrust\nOthers"
+   "options": "\nCentral Government\nState Government\nOverseas Organization\nPrivate Company\nTrust\nOthers",
+   "reqd": 1
   },
   {
    "allow_on_submit": 1,
    "default": "Draft",
    "fieldname": "status",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Status",
    "options": "\nDraft\nPending\nApproved\nRejected",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "description": "(Max 25 MB)",
    "fieldname": "attachment",
    "fieldtype": "Attach",
-   "label": "Attachment"
+   "label": "Attachment",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2024-06-28 01:38:21.819848",
+ "modified": "2024-07-03 14:35:46.124475",
  "modified_by": "Administrator",
  "module": "RDCC",
  "name": "Grant",

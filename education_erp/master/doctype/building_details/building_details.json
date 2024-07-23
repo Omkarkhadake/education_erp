@@ -69,27 +69,23 @@
   "details_tab",
   "fire_nocs",
   "fire_noc",
-  "occupancy_details_section",
+  "column_break_nthr",
   "occupancy_certificate_details",
   "building_completion_certificates_bcc_section",
-  "building_completion_certificates_list"
+  "building_completion_certificates_list",
+  "column_break_kwgz",
+  "lift_list"
  ],
  "fields": [
   {
    "fieldname": "fire_nocs",
-   "fieldtype": "Section Break",
-   "label": "Fire NoC's Details"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "fire_noc",
    "fieldtype": "Table",
    "label": "Fire Noc",
    "options": "Child Table Fire Noc"
-  },
-  {
-   "fieldname": "occupancy_details_section",
-   "fieldtype": "Section Break",
-   "label": "Occupancy Details"
   },
   {
    "fieldname": "occupancy_certificate_details",
@@ -99,8 +95,7 @@
   },
   {
    "fieldname": "building_completion_certificates_bcc_section",
-   "fieldtype": "Section Break",
-   "label": "Building Completion Certificates (BCC)"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "building_completion_certificates_list",
@@ -443,11 +438,25 @@
    "fieldname": "balance_fsi_available",
    "fieldtype": "Data",
    "label": "Balance FSI Available"
+  },
+  {
+   "fieldname": "lift_list",
+   "fieldtype": "Table",
+   "label": "Lift List",
+   "options": "Child Table Lift Details"
+  },
+  {
+   "fieldname": "column_break_nthr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kwgz",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-22 16:19:04.601601",
+ "modified": "2024-07-23 16:05:07.774325",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Building Details",

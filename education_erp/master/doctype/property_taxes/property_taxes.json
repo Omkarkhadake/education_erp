@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{name_of_the_building}-{###}",
+ "creation": "2024-07-23 15:54:52.095980",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_no",
+  "tax_assessment_no",
+  "milkat_no",
+  "panchayat__corporation_jurisdiction",
+  "total_applicable_build_up_area",
+  "total_expected_build_up_area",
+  "applicable_period_for_levy_of_tax",
+  "column_break_rybn",
+  "name_of_the_building",
+  "name_of_the_plot_owner",
+  "zone_no",
+  "cs__municipal__survey_no",
+  "townvillage",
+  "net_applicable_build_up_area_for_taxes"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No."
+  },
+  {
+   "fieldname": "tax_assessment_no",
+   "fieldtype": "Data",
+   "label": "Tax Assessment No. "
+  },
+  {
+   "fieldname": "milkat_no",
+   "fieldtype": "Data",
+   "label": "Milkat No."
+  },
+  {
+   "fieldname": "panchayat__corporation_jurisdiction",
+   "fieldtype": "Data",
+   "label": "Panchayat / Corporation Jurisdiction "
+  },
+  {
+   "fieldname": "total_applicable_build_up_area",
+   "fieldtype": "Data",
+   "label": "Total applicable built-up area"
+  },
+  {
+   "fieldname": "total_expected_build_up_area",
+   "fieldtype": "Data",
+   "label": "Total exempted built-up area"
+  },
+  {
+   "fieldname": "applicable_period_for_levy_of_tax",
+   "fieldtype": "Data",
+   "label": "Applicable period for levy of Tax"
+  },
+  {
+   "fieldname": "column_break_rybn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_the_building",
+   "fieldtype": "Data",
+   "label": "Name of the Building"
+  },
+  {
+   "fieldname": "name_of_the_plot_owner",
+   "fieldtype": "Data",
+   "label": "Name of the Plot Owner "
+  },
+  {
+   "fieldname": "zone_no",
+   "fieldtype": "Data",
+   "label": "Zone No."
+  },
+  {
+   "fieldname": "cs__municipal__survey_no",
+   "fieldtype": "Data",
+   "label": "C.S. / Municipal / Survey No."
+  },
+  {
+   "fieldname": "townvillage",
+   "fieldtype": "Data",
+   "label": "Town/Village"
+  },
+  {
+   "fieldname": "net_applicable_build_up_area_for_taxes",
+   "fieldtype": "Data",
+   "label": "Net applicable built-up area for taxes "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-23 15:58:44.443761",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Property Taxes",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

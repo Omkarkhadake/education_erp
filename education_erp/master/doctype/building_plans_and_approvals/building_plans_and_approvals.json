@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-23 16:03:59.001534",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "building_name",
+  "name_of_the_owner",
+  "plan_approval_date",
+  "address_of_the_approving_authority",
+  "no_of_floors",
+  "total_no_of_rooms_on_each_floor",
+  "room_category",
+  "room_type",
+  "room_carpet_area_in_sqm",
+  "maximum_seating_capacity",
+  "column_break_ksac",
+  "plot_no",
+  "plan_approval_nooffice_letter_no",
+  "approving_authority",
+  "approving_body",
+  "total_no_of_drawing",
+  "drawing_no",
+  "drawing_description",
+  "room_no",
+  "room_build_up_area",
+  "approved_build_up_area"
+ ],
+ "fields": [
+  {
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building Name "
+  },
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No. "
+  },
+  {
+   "fieldname": "name_of_the_owner",
+   "fieldtype": "Data",
+   "label": "Name of the Owner"
+  },
+  {
+   "fieldname": "plan_approval_nooffice_letter_no",
+   "fieldtype": "Data",
+   "label": "Plan Approval No./Office Letter No. "
+  },
+  {
+   "fieldname": "plan_approval_date",
+   "fieldtype": "Date",
+   "label": "Plan Approval Date"
+  },
+  {
+   "fieldname": "column_break_ksac",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approving_authority",
+   "fieldtype": "Data",
+   "label": "Approving Authority"
+  },
+  {
+   "fieldname": "approving_body",
+   "fieldtype": "Data",
+   "label": "Approving Body"
+  },
+  {
+   "fieldname": "address_of_the_approving_authority",
+   "fieldtype": "Small Text",
+   "label": "Address of the Approving Authority"
+  },
+  {
+   "fieldname": "total_no_of_drawing",
+   "fieldtype": "Data",
+   "label": "Total No. of Drawing  "
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "label": "Drawing No. "
+  },
+  {
+   "fieldname": "drawing_description",
+   "fieldtype": "Small Text",
+   "label": "Drawing Description "
+  },
+  {
+   "fieldname": "no_of_floors",
+   "fieldtype": "Data",
+   "label": "No. of Floors "
+  },
+  {
+   "fieldname": "total_no_of_rooms_on_each_floor",
+   "fieldtype": "Data",
+   "label": "Total No. of Rooms on Each Floor"
+  },
+  {
+   "fieldname": "room_category",
+   "fieldtype": "Link",
+   "label": "Room Category",
+   "options": "Room Category"
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "label": "Room Type",
+   "options": "Room Type"
+  },
+  {
+   "fieldname": "room_carpet_area_in_sqm",
+   "fieldtype": "Link",
+   "label": "Room Carpet Area in Sqm.",
+   "options": "Room Type"
+  },
+  {
+   "fieldname": "maximum_seating_capacity",
+   "fieldtype": "Link",
+   "label": "Maximum Seating Capacity",
+   "options": "Room Type"
+  },
+  {
+   "fieldname": "room_no",
+   "fieldtype": "Data",
+   "label": "Room No. "
+  },
+  {
+   "fieldname": "room_build_up_area",
+   "fieldtype": "Data",
+   "label": "Room Built-up Area in Sqm."
+  },
+  {
+   "fieldname": "approved_build_up_area",
+   "fieldtype": "Data",
+   "label": "Approved Built-up area of Applicable Floor"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-23 16:24:36.482078",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Building Plans and Approvals",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

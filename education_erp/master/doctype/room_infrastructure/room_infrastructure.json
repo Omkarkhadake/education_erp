@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-23 16:28:52.071849",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_number",
+  "name_of_the_building",
+  "room_category",
+  "floor_no",
+  "room_no_drop_down",
+  "room_type",
+  "column_break_azxk",
+  "build_up_as_per_norms",
+  "build_up_as_per_records",
+  "carpet_area_in_sqm_as_per_norms",
+  "carpet_area_in_sqm_as_per_records",
+  "maximum_seating_capacity",
+  "room_allocation"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Data",
+   "label": "Plot Number"
+  },
+  {
+   "fieldname": "name_of_the_building",
+   "fieldtype": "Data",
+   "label": "Name of the Building"
+  },
+  {
+   "fieldname": "room_category",
+   "fieldtype": "Link",
+   "label": "Room Category",
+   "options": "Room Category"
+  },
+  {
+   "fieldname": "floor_no",
+   "fieldtype": "Data",
+   "label": "Floor No."
+  },
+  {
+   "fieldname": "room_no_drop_down",
+   "fieldtype": "Data",
+   "label": "Room No. (drop down)"
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "label": "Room Type ",
+   "options": "Room Type"
+  },
+  {
+   "fieldname": "carpet_area_in_sqm_as_per_records",
+   "fieldtype": "Data",
+   "label": "Carpet Area (in Sqm.) as per Records"
+  },
+  {
+   "fieldname": "carpet_area_in_sqm_as_per_norms",
+   "fieldtype": "Data",
+   "label": "Carpet Area (in Sqm.) as per Norms"
+  },
+  {
+   "fieldname": "build_up_as_per_records",
+   "fieldtype": "Data",
+   "label": "Built-up Area (in Sqm.) as per Records"
+  },
+  {
+   "fieldname": "build_up_as_per_norms",
+   "fieldtype": "Data",
+   "label": "Built-up Area (in Sqm.) as per Norms"
+  },
+  {
+   "fieldname": "room_allocation",
+   "fieldtype": "Data",
+   "label": "Room Allocation"
+  },
+  {
+   "fieldname": "maximum_seating_capacity",
+   "fieldtype": "Data",
+   "label": "Maximum Seating Capacity "
+  },
+  {
+   "fieldname": "column_break_azxk",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-23 17:02:47.714256",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Room Infrastructure",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

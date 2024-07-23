@@ -1,0 +1,418 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-16 16:25:45.480517",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_2_tab",
+  "name_of_the_electricity_distribution_company",
+  "website",
+  "circle_name",
+  "division",
+  "column_break_krtk",
+  "gst_no",
+  "circle_no",
+  "sub_division",
+  "email_address_of_the_customer",
+  "column_break_wmnb",
+  "hsn_code",
+  "income_tax_pan_of_the_electricity_distribution_company",
+  "landline_with_std_code_of_the_customer",
+  "customer_care",
+  "electricity_connection_details_tab",
+  "date_of_connection",
+  "meter_no",
+  "category",
+  "activity_of_the_consumer",
+  "consumption_type",
+  "current_tariff",
+  "column_break_pzok",
+  "consumer_no",
+  "consumer_name",
+  "consumer_address",
+  "urban__rural",
+  "old_tariff",
+  "express_feeder",
+  "column_break_xwww",
+  "scale__sector",
+  "sanction_load_kw",
+  "connected_load_kw",
+  "feeder_voltage_kv",
+  "contract_demand_kva",
+  "security_deposit",
+  "consumer_information_tab",
+  "name_of_the_contact_person",
+  "registered_mobile_no_of_consumer",
+  "column_break_jwgd",
+  "landline_with_std_code",
+  "registered_email_address_of_consumer",
+  "bank_account_details_section",
+  "beneficiary_name",
+  "name_of_the_bank",
+  "branch_name",
+  "column_break_wlnm",
+  "bank_account_no",
+  "account_type",
+  "neft__ifsc_code",
+  "sanctions_and_approvals_tab",
+  "sanction_letter_no",
+  "issuing_authority",
+  "validity_of_sanction_from",
+  "column_break_qkmp",
+  "sanction_letter_date",
+  "issuing_body",
+  "validity_of_sanction_to",
+  "orders__notifications__circulars_section",
+  "document_no",
+  "document_type",
+  "attachment",
+  "column_break_lfaa",
+  "document_title",
+  "document_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Basic Information "
+  },
+  {
+   "fieldname": "name_of_the_electricity_distribution_company",
+   "fieldtype": "Data",
+   "label": "Name of the Electricity Distribution Company"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "circle_name",
+   "fieldtype": "Data",
+   "label": "Circle Name"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "income_tax_pan_of_the_electricity_distribution_company",
+   "fieldtype": "Data",
+   "label": "Income Tax PAN of the Electricity Distribution Company"
+  },
+  {
+   "fieldname": "landline_with_std_code_of_the_customer",
+   "fieldtype": "Data",
+   "label": "Landline with STD Code of the Customer "
+  },
+  {
+   "fieldname": "column_break_krtk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gst_no",
+   "fieldtype": "Data",
+   "label": "GST No."
+  },
+  {
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "label": "HSN Code"
+  },
+  {
+   "fieldname": "circle_no",
+   "fieldtype": "Data",
+   "label": "Circle No."
+  },
+  {
+   "fieldname": "sub_division",
+   "fieldtype": "Data",
+   "label": "Sub-division"
+  },
+  {
+   "fieldname": "customer_care",
+   "fieldtype": "Data",
+   "label": "Customer Care"
+  },
+  {
+   "fieldname": "email_address_of_the_customer",
+   "fieldtype": "Data",
+   "label": "Email Address of the Customer"
+  },
+  {
+   "fieldname": "electricity_connection_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Electricity Connection Details "
+  },
+  {
+   "fieldname": "date_of_connection",
+   "fieldtype": "Data",
+   "label": "Date of Connection"
+  },
+  {
+   "fieldname": "consumer_name",
+   "fieldtype": "Data",
+   "label": "Consumer Name"
+  },
+  {
+   "fieldname": "scale__sector",
+   "fieldtype": "Data",
+   "label": "Scale / Sector"
+  },
+  {
+   "fieldname": "meter_no",
+   "fieldtype": "Data",
+   "label": "Meter No."
+  },
+  {
+   "fieldname": "connected_load_kw",
+   "fieldtype": "Data",
+   "label": "Connected Load (KW)"
+  },
+  {
+   "fieldname": "contract_demand_kva",
+   "fieldtype": "Data",
+   "label": "Contract Demand (KVA)"
+  },
+  {
+   "fieldname": "column_break_pzok",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consumer_no",
+   "fieldtype": "Data",
+   "label": "Consumer No."
+  },
+  {
+   "fieldname": "consumer_address",
+   "fieldtype": "Data",
+   "label": "Consumer Address"
+  },
+  {
+   "fieldname": "urban__rural",
+   "fieldtype": "Data",
+   "label": "Urban / Rural"
+  },
+  {
+   "fieldname": "sanction_load_kw",
+   "fieldtype": "Data",
+   "label": "Sanction Load (KW)"
+  },
+  {
+   "fieldname": "express_feeder",
+   "fieldtype": "Select",
+   "label": "Express Feeder",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "feeder_voltage_kv",
+   "fieldtype": "Data",
+   "label": "Feeder Voltage (KV)"
+  },
+  {
+   "fieldname": "current_tariff",
+   "fieldtype": "Data",
+   "label": "Current Tariff"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "consumption_type",
+   "fieldtype": "Data",
+   "label": "Consumption Type"
+  },
+  {
+   "fieldname": "old_tariff",
+   "fieldtype": "Data",
+   "label": "Old Tariff"
+  },
+  {
+   "fieldname": "security_deposit",
+   "fieldtype": "Data",
+   "label": "Security Deposit"
+  },
+  {
+   "fieldname": "activity_of_the_consumer",
+   "fieldtype": "Data",
+   "label": "Activity of the Consumer"
+  },
+  {
+   "fieldname": "column_break_wmnb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xwww",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consumer_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Consumer Information "
+  },
+  {
+   "fieldname": "name_of_the_contact_person",
+   "fieldtype": "Data",
+   "label": "Name of the Contact Person "
+  },
+  {
+   "fieldname": "registered_mobile_no_of_consumer",
+   "fieldtype": "Data",
+   "label": "Registered Mobile No. of Consumer"
+  },
+  {
+   "fieldname": "column_break_jwgd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "landline_with_std_code",
+   "fieldtype": "Data",
+   "label": "Landline with STD Code"
+  },
+  {
+   "fieldname": "registered_email_address_of_consumer",
+   "fieldtype": "Data",
+   "label": "Registered Email address of Consumer"
+  },
+  {
+   "fieldname": "bank_account_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Account Details "
+  },
+  {
+   "fieldname": "beneficiary_name",
+   "fieldtype": "Data",
+   "label": "Beneficiary Name"
+  },
+  {
+   "fieldname": "name_of_the_bank",
+   "fieldtype": "Data",
+   "label": "Name of the Bank"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "column_break_wlnm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No."
+  },
+  {
+   "fieldname": "account_type",
+   "fieldtype": "Data",
+   "label": "Account Type "
+  },
+  {
+   "fieldname": "neft__ifsc_code",
+   "fieldtype": "Data",
+   "label": "NEFT / IFSC Code"
+  },
+  {
+   "fieldname": "sanctions_and_approvals_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sanctions and Approvals"
+  },
+  {
+   "fieldname": "sanction_letter_no",
+   "fieldtype": "Data",
+   "label": "Sanction Letter No."
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "validity_of_sanction_from",
+   "fieldtype": "Date",
+   "label": "Validity of Sanction - From"
+  },
+  {
+   "fieldname": "column_break_qkmp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sanction_letter_date",
+   "fieldtype": "Data",
+   "label": "Sanction Letter Date"
+  },
+  {
+   "fieldname": "issuing_body",
+   "fieldtype": "Data",
+   "label": "Issuing Body "
+  },
+  {
+   "fieldname": "validity_of_sanction_to",
+   "fieldtype": "Date",
+   "label": "Validity of Sanction - To"
+  },
+  {
+   "fieldname": "orders__notifications__circulars_section",
+   "fieldtype": "Section Break",
+   "label": "Orders / Notifications / Circulars"
+  },
+  {
+   "fieldname": "document_no",
+   "fieldtype": "Data",
+   "label": "Document No."
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Data",
+   "label": "Document Type "
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "column_break_lfaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_title",
+   "fieldtype": "Data",
+   "label": "Document Title"
+  },
+  {
+   "fieldname": "document_date",
+   "fieldtype": "Data",
+   "label": "Document Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-16 16:54:26.451094",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Electricity Connection Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

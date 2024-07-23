@@ -39,7 +39,6 @@ def execute(filters=None):
             'custodian_of_original_document': d.custodian_of_original_document,
             'custodian_email': d.custodian_email,
             'document_format': d.document_format,
-            'document_access_profile': d.document_access_profile,
             'document_types': d.document_types,
             'document_status': d.document_status,
             'document_source': d.document_source,
@@ -47,7 +46,8 @@ def execute(filters=None):
             'document_end_date': d.document_end_date,
             'website_reference': d.website_reference,
             'remarks': d.remarks,
-            'status': d.status   
+            'status': d.status ,
+            'user_access_profile':d.user_access_profile,
         })
         data.append(row)
         
@@ -131,7 +131,7 @@ def get_columns():
         {
             "fieldname": "document_name",
             "label": _("Document Name"),
-            "fieldtype": "Link",
+            "fieldtype": "Data",
             "options": "Document Name",
             'width': '120'
         },
@@ -174,13 +174,6 @@ def get_columns():
             'width': '120'
         },
         {
-            "fieldname": "document_access_profile",
-            "label": _("Document Access Profile"),
-            "fieldtype": "Select",
-            "options": "",
-            'width': '120'
-        },
-        {
             "fieldname": "document_types",
             "label": _("Document Types"),
             "fieldtype": "Data",
@@ -201,10 +194,15 @@ def get_columns():
             'width': '120'
         },
         {
+            "fieldname": "user_access_profile",
+            "label": _("User Access Profile"),
+            "fieldtype": "Data",
+            'width': '120'
+        },
+        {
             "fieldname": "document_source",
             "label": _("Document Source"),
-            "fieldtype": "Link",
-            "options": "Document Source",
+            "fieldtype": "Data",
             'width': '120'
         },
         {
@@ -222,8 +220,7 @@ def get_columns():
         {
             "fieldname": "website_reference",
             "label": _("Website Reference"),
-            "fieldtype": "Link",
-            "options": "Website Reference",
+            "fieldtype": "Data",
             'width': '120'
         },
         {
@@ -231,7 +228,8 @@ def get_columns():
             "label": _("Remarks"),
             "fieldtype": "Data",
             'width': '120'
-        }
+        },
+
     ]
 
 def get_cs_data(filters):
@@ -242,8 +240,8 @@ def get_cs_data(filters):
             'entity_name', 'fiscal_year', 'employee', 'designation', 'document_creation_date', 'employee_name', 
             'email_id', 'government_bodies_and_regulators', 'document_category', 'approving_authority_id', 'document_sub_category', 
             'document_name', 'document_number', 'document_date', 'status', 'application_number',
-            'custodian_of_original_document', 'custodian_email', 'document_format', 'document_access_profile', 'document_types',
-            'document_status', 'document_source', 'document_start_date', 'document_end_date', 'website_reference', 'remarks'
+            'custodian_of_original_document', 'custodian_email', 'document_format', 'document_types',
+            'document_status', 'document_source', 'document_start_date', 'document_end_date', 'website_reference', 'remarks','user_access_profile'
         ],
         filters=conditions
     )

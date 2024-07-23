@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name_of_the_structural_engineer",
+ "creation": "2024-07-22 15:23:00.079962",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_structural_engineer",
+  "valid_from",
+  "registration_no",
+  "landline_with_std_code",
+  "column_break_hqek",
+  "address_of_the_structural_engineer",
+  "valid_to",
+  "email_address",
+  "mobile_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_structural_engineer",
+   "fieldtype": "Data",
+   "label": "Name of the Structural Engineer ",
+   "unique": 1
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Registration No."
+  },
+  {
+   "fieldname": "valid_to",
+   "fieldtype": "Data",
+   "label": "Valid To"
+  },
+  {
+   "fieldname": "landline_with_std_code",
+   "fieldtype": "Data",
+   "label": "Landline with STD Code"
+  },
+  {
+   "fieldname": "column_break_hqek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_of_the_structural_engineer",
+   "fieldtype": "Data",
+   "label": "Address of the Structural Engineer "
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address "
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 16:02:38.505338",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Structural Engineer Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name_of_the_rcc_consultant",
+ "creation": "2024-07-22 15:06:08.769836",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_rcc_consultant",
+  "registration_no",
+  "valid_from",
+  "email_address",
+  "column_break_kzho",
+  "address_of_the_rcc_consultant",
+  "landline_with_std_code",
+  "valid_to",
+  "mobile_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_rcc_consultant",
+   "fieldtype": "Data",
+   "label": "Name of the RCC Consultant",
+   "unique": 1
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Registration No."
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address "
+  },
+  {
+   "fieldname": "column_break_kzho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_of_the_rcc_consultant",
+   "fieldtype": "Data",
+   "label": "Address of the RCC Consultant"
+  },
+  {
+   "fieldname": "valid_to",
+   "fieldtype": "Date",
+   "label": "Valid To"
+  },
+  {
+   "fieldname": "landline_with_std_code",
+   "fieldtype": "Data",
+   "label": "Landline with STD Code"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 15:08:00.392226",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "RCC Consultant Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

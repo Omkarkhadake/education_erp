@@ -1,0 +1,401 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-16 16:57:49.053486",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_section",
+  "name_of_the_water_distribution_agency",
+  "hsn_code",
+  "column_break_ylnl",
+  "gst_no",
+  "income_tax_pan_of_the_water_distribution_agency",
+  "column_break_jfid",
+  "email_address",
+  "customer_care_toll_free",
+  "water_connection_details_section",
+  "plot_no",
+  "consumer_no",
+  "meter_size",
+  "minimum_quantity_per_day",
+  "tariff_for_fire_charges",
+  "tariff_for_drainage_charges",
+  "column_break_lleo",
+  "plot_area_in_sqm",
+  "consumer_name",
+  "zone_no",
+  "tariff_for_water_charges",
+  "tariff_for_service_charges",
+  "activity_of_the_consumer",
+  "column_break_iphe",
+  "date_of_connection",
+  "security_deposit",
+  "consumer_address",
+  "tab_2_tab",
+  "consumer_contact_information_section",
+  "name_of_the_contact_person",
+  "registered_email_address_of_consumer",
+  "column_break_mzks",
+  "landline_with_std_code",
+  "column_break_xslm",
+  "registered_mobile_no_of_consumer",
+  "bank_account_details_section",
+  "beneficiary_name",
+  "branch_name",
+  "column_break_ytbc",
+  "bank_account_no",
+  "account_type",
+  "column_break_ibpe",
+  "name_of_the_bank",
+  "neft__ifsc_code",
+  "documents",
+  "sanctions_and_approvals_section",
+  "sanction_letter_no",
+  "issuing_body",
+  "column_break_xwfu",
+  "sanction_letter_date",
+  "validity_of_sanction_from",
+  "column_break_fxlk",
+  "issuing_authority",
+  "validity_of_sanction_to",
+  "orders__notifications__circulars_section",
+  "document_no",
+  "document_date",
+  "column_break_nmbk",
+  "document_title",
+  "attachment",
+  "column_break_bsnl",
+  "document_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information "
+  },
+  {
+   "fieldname": "name_of_the_water_distribution_agency",
+   "fieldtype": "Data",
+   "label": "Name of the Water Distribution Agency"
+  },
+  {
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "label": "HSN Code"
+  },
+  {
+   "fieldname": "column_break_ylnl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gst_no",
+   "fieldtype": "Data",
+   "label": "GST No."
+  },
+  {
+   "fieldname": "income_tax_pan_of_the_water_distribution_agency",
+   "fieldtype": "Data",
+   "label": "Income Tax PAN of the Water Distribution Agency"
+  },
+  {
+   "fieldname": "column_break_jfid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address "
+  },
+  {
+   "fieldname": "customer_care_toll_free",
+   "fieldtype": "Data",
+   "label": "Customer Care (Toll Free)"
+  },
+  {
+   "bold": 1,
+   "fieldname": "water_connection_details_section",
+   "fieldtype": "Section Break",
+   "label": "Water Connection Details ",
+   "search_index": 1
+  },
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No."
+  },
+  {
+   "fieldname": "consumer_no",
+   "fieldtype": "Data",
+   "label": "Consumer No"
+  },
+  {
+   "fieldname": "meter_size",
+   "fieldtype": "Data",
+   "label": "Meter Size"
+  },
+  {
+   "fieldname": "minimum_quantity_per_day",
+   "fieldtype": "Data",
+   "label": "Minimum Quantity Per Day"
+  },
+  {
+   "fieldname": "tariff_for_fire_charges",
+   "fieldtype": "Data",
+   "label": "Tariff for Fire Charges"
+  },
+  {
+   "fieldname": "tariff_for_drainage_charges",
+   "fieldtype": "Data",
+   "label": "Tariff for Drainage Charges"
+  },
+  {
+   "fieldname": "column_break_lleo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plot_area_in_sqm",
+   "fieldtype": "Data",
+   "label": "Plot Area in Sqm."
+  },
+  {
+   "fieldname": "consumer_name",
+   "fieldtype": "Data",
+   "label": "Consumer Name"
+  },
+  {
+   "fieldname": "zone_no",
+   "fieldtype": "Data",
+   "label": "Zone No"
+  },
+  {
+   "fieldname": "tariff_for_water_charges",
+   "fieldtype": "Data",
+   "label": "Tariff for Water Charges"
+  },
+  {
+   "fieldname": "tariff_for_service_charges",
+   "fieldtype": "Data",
+   "label": "Tariff for Service Charges"
+  },
+  {
+   "fieldname": "activity_of_the_consumer",
+   "fieldtype": "Data",
+   "label": "Activity of the Consumer"
+  },
+  {
+   "fieldname": "column_break_iphe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_connection",
+   "fieldtype": "Date",
+   "label": "Date of Connection"
+  },
+  {
+   "fieldname": "security_deposit",
+   "fieldtype": "Data",
+   "label": "Security Deposit"
+  },
+  {
+   "fieldname": "consumer_address",
+   "fieldtype": "Small Text",
+   "label": "Consumer Address"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Consumer Information "
+  },
+  {
+   "fieldname": "consumer_contact_information_section",
+   "fieldtype": "Section Break",
+   "label": "Consumer Contact Information "
+  },
+  {
+   "fieldname": "name_of_the_contact_person",
+   "fieldtype": "Data",
+   "label": "Name of the Contact Person "
+  },
+  {
+   "fieldname": "registered_email_address_of_consumer",
+   "fieldtype": "Data",
+   "label": "Registered Email address of Consumer"
+  },
+  {
+   "fieldname": "column_break_mzks",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "landline_with_std_code",
+   "fieldtype": "Data",
+   "label": "Landline with STD Code"
+  },
+  {
+   "fieldname": "column_break_xslm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registered_mobile_no_of_consumer",
+   "fieldtype": "Data",
+   "label": "Registered Mobile No. of Consumer"
+  },
+  {
+   "bold": 1,
+   "fieldname": "bank_account_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Account Details ",
+   "search_index": 1
+  },
+  {
+   "fieldname": "beneficiary_name",
+   "fieldtype": "Data",
+   "label": "Beneficiary Name"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No."
+  },
+  {
+   "fieldname": "name_of_the_bank",
+   "fieldtype": "Data",
+   "label": "Name of the Bank"
+  },
+  {
+   "fieldname": "account_type",
+   "fieldtype": "Data",
+   "label": "Account Type "
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "neft__ifsc_code",
+   "fieldtype": "Data",
+   "label": "NEFT / IFSC Code"
+  },
+  {
+   "fieldname": "column_break_ytbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ibpe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sanction_letter_no",
+   "fieldtype": "Data",
+   "label": "Sanction Letter No."
+  },
+  {
+   "fieldname": "issuing_body",
+   "fieldtype": "Data",
+   "label": "Issuing Body "
+  },
+  {
+   "fieldname": "column_break_xwfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sanction_letter_date",
+   "fieldtype": "Data",
+   "label": "Sanction Letter Date"
+  },
+  {
+   "fieldname": "validity_of_sanction_from",
+   "fieldtype": "Date",
+   "label": "Validity of Sanction - From"
+  },
+  {
+   "fieldname": "column_break_fxlk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "validity_of_sanction_to",
+   "fieldtype": "Date",
+   "label": "Validity of Sanction - To"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Tab Break",
+   "label": "Douments"
+  },
+  {
+   "bold": 1,
+   "fieldname": "sanctions_and_approvals_section",
+   "fieldtype": "Section Break",
+   "label": "Sanctions and Approvals",
+   "search_index": 1
+  },
+  {
+   "fieldname": "orders__notifications__circulars_section",
+   "fieldtype": "Section Break",
+   "label": "Orders / Notifications / Circulars"
+  },
+  {
+   "fieldname": "document_no",
+   "fieldtype": "Data",
+   "label": "Document No."
+  },
+  {
+   "fieldname": "document_date",
+   "fieldtype": "Data",
+   "label": "Document Date"
+  },
+  {
+   "fieldname": "column_break_nmbk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_title",
+   "fieldtype": "Data",
+   "label": "Document Title"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "column_break_bsnl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Data",
+   "label": "Document Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-18 09:15:53.321176",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Water Connection Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

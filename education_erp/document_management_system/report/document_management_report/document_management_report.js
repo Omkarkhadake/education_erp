@@ -28,12 +28,6 @@ frappe.query_reports["Document Management Report"] = {
             "options": "Document Sub-Category"
         },
 		{
-            "fieldname": "document_name",
-            "label": __("Document Name"),
-            "fieldtype": "Link",
-            "options": "Document Name"
-        },
-		{
             "fieldname": "document_types",
             "label": __("Document Types"),
             "fieldtype": "Link",
@@ -45,17 +39,17 @@ frappe.query_reports["Document Management Report"] = {
             "fieldtype": "Select",
             "options": "\nDraft\nPending\nApproved\nRejected"
         },
+        {
+            "fieldname": "user_access_profile",
+            "label": __("User Access Profile"),
+            "fieldtype": "Select",
+            "options": "\nPublic\nConfidential"
+        },
 		{
             "fieldname": "document_status",
             "label": __("Document Status"),
             "fieldtype": "Select",
             "options": "\nDraft\nPending\nFinal"
-        },
-		{
-            "fieldname": "document_access_profile",
-            "label": __("Document Access Profile"),
-            "fieldtype": "Select",
-            "options": "\nConfidential\nPublic\nPrivate\nGeneral"
         },
 		{
             "fieldname": "fiscal_year",

@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name_of_the_agency",
+ "creation": "2024-07-22 16:04:32.055081",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_agency",
+  "registration_no__licence_no",
+  "valid_to",
+  "landline_with_std_code",
+  "column_break_rmts",
+  "address_of_the_agency",
+  "email_address",
+  "valid_from",
+  "mobile_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_agency",
+   "fieldtype": "Data",
+   "label": "Name of the Agency",
+   "unique": 1
+  },
+  {
+   "fieldname": "registration_no__licence_no",
+   "fieldtype": "Data",
+   "label": "Registration No. / Licence No."
+  },
+  {
+   "fieldname": "valid_to",
+   "fieldtype": "Data",
+   "label": "Valid To"
+  },
+  {
+   "fieldname": "landline_with_std_code",
+   "fieldtype": "Data",
+   "label": "Landline with STD Code"
+  },
+  {
+   "fieldname": "column_break_rmts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_of_the_agency",
+   "fieldtype": "Data",
+   "label": "Address of the Agency "
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Data",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address "
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 16:05:49.286070",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Fire Fighting Agency Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

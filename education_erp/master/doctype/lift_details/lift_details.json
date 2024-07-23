@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{name_of_the_building}-{###}",
+ "creation": "2024-07-18 10:32:11.623798",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_building",
+  "lift_license_date",
+  "make_of_lift",
+  "no_of_stops",
+  "mobile",
+  "column_break_cave",
+  "registration_no",
+  "lift_license_no",
+  "horse_power_of_motor",
+  "speed_of_the_lift",
+  "email",
+  "column_break_xcti",
+  "certificate_no",
+  "license_issuing_authority",
+  "capacity_of_lift_kgs__no_of_persons",
+  "type_of_drive"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_building",
+   "fieldtype": "Data",
+   "label": "Name of the building"
+  },
+  {
+   "fieldname": "lift_license_date",
+   "fieldtype": "Date",
+   "label": "Lift License Date"
+  },
+  {
+   "fieldname": "make_of_lift",
+   "fieldtype": "Date",
+   "label": "Make of Lift"
+  },
+  {
+   "fieldname": "no_of_stops",
+   "fieldtype": "Data",
+   "label": "No. of Stops"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "column_break_cave",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Registration No."
+  },
+  {
+   "fieldname": "lift_license_no",
+   "fieldtype": "Data",
+   "label": "Lift License No."
+  },
+  {
+   "fieldname": "horse_power_of_motor",
+   "fieldtype": "Data",
+   "label": "Horse Power of Motor"
+  },
+  {
+   "fieldname": "speed_of_the_lift",
+   "fieldtype": "Data",
+   "label": "Speed of the Lift"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email "
+  },
+  {
+   "fieldname": "column_break_xcti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificate_no",
+   "fieldtype": "Data",
+   "label": "Certificate No."
+  },
+  {
+   "fieldname": "license_issuing_authority",
+   "fieldtype": "Data",
+   "label": "License Issuing Authority"
+  },
+  {
+   "fieldname": "capacity_of_lift_kgs__no_of_persons",
+   "fieldtype": "Date",
+   "label": "Capacity of Lift (kgs / No. of Persons)"
+  },
+  {
+   "fieldname": "type_of_drive",
+   "fieldtype": "Data",
+   "label": "Type of Drive"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 16:34:07.919100",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Lift Details",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

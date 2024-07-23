@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class DocumentName(Document):
+class ChildTableFireNoc(Document):
 	pass

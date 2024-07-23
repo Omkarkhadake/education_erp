@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-22 10:14:04.845086",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_building",
+  "plot_no",
+  "certificate_no",
+  "certificate_date",
+  "total_build_up_area"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_building",
+   "fieldtype": "Link",
+   "label": "Name of the building",
+   "options": "Building Completion Certificates"
+  },
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No"
+  },
+  {
+   "fieldname": "certificate_no",
+   "fieldtype": "Data",
+   "label": "Certificate No."
+  },
+  {
+   "fieldname": "certificate_date",
+   "fieldtype": "Date",
+   "label": "Certificate Date"
+  },
+  {
+   "fieldname": "total_build_up_area",
+   "fieldtype": "Data",
+   "label": "Total Built-up area (Sqm.)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-22 14:41:42.520806",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Child Table Building Completion Certificates",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

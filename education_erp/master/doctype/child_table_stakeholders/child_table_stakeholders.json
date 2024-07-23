@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-18 10:18:12.649739",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stakeholders_type",
+  "name1",
+  "registration_no",
+  "valid_from",
+  "valid_to",
+  "landline_with_std_code",
+  "address",
+  "email_address",
+  "mobile_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "stakeholders_type",
+   "fieldtype": "Link",
+   "label": "Stakeholders Type",
+   "options": "Stakeholders Details"
+  },
+  {
+   "fetch_from": "stakeholders_type.name1",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fetch_from": "stakeholders_type.registration_no",
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Registration No."
+  },
+  {
+   "fetch_from": "stakeholders_type.valid_from",
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "label": "Valid From"
+  },
+  {
+   "fetch_from": "stakeholders_type.landline_with_std_code",
+   "fieldname": "landline_with_std_code",
+   "fieldtype": "Data",
+   "label": "Landline with STD Code"
+  },
+  {
+   "fetch_from": "stakeholders_type.address",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "stakeholders_type.email_address",
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address "
+  },
+  {
+   "fetch_from": "stakeholders_type.valid_to",
+   "fieldname": "valid_to",
+   "fieldtype": "Date",
+   "label": "Valid To"
+  },
+  {
+   "fetch_from": "stakeholders_type.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-18 10:25:52.610563",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Child Table Stakeholders",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name_of_the_builder",
+ "creation": "2024-07-22 15:16:21.258763",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_builder",
+  "registration_no_builder",
+  "valid_from",
+  "valid_to",
+  "column_break_kcaz",
+  "address_of_the_builder",
+  "email_address",
+  "landline_with_std_code",
+  "mobile_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_builder",
+   "fieldtype": "Data",
+   "label": "Name of the Builder",
+   "unique": 1
+  },
+  {
+   "fieldname": "registration_no_builder",
+   "fieldtype": "Data",
+   "label": "Registration No."
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "valid_to",
+   "fieldtype": "Date",
+   "label": "Valid To"
+  },
+  {
+   "fieldname": "column_break_kcaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_of_the_builder",
+   "fieldtype": "Data",
+   "label": "Address of the Builder "
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address "
+  },
+  {
+   "fieldname": "landline_with_std_code",
+   "fieldtype": "Data",
+   "label": "Landline with STD Code"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 15:19:12.745910",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Builder Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

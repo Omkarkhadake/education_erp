@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plot_no",
+ "creation": "2024-07-16 16:19:08.818531",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_no",
+  "lease_deed_registration_no",
+  "index_ii_particulars",
+  "office_address_of_the_executing_authority",
+  "name_of_the_lessor",
+  "lease_tenure_years",
+  "lease_end_date",
+  "boundaries",
+  "land_type",
+  "minimum__of_construction",
+  "column_break_llil",
+  "plot_area_sqm",
+  "registration_date",
+  "executing_authority",
+  "premium_amount_paid_rs",
+  "address_of_the_lease",
+  "lease_start_date",
+  "nature_of_lease",
+  "purpose_of_land_usage",
+  "time_limit_for_completion_for_construction",
+  "_of_construction_completed"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No. ",
+   "unique": 1
+  },
+  {
+   "fieldname": "lease_deed_registration_no",
+   "fieldtype": "Data",
+   "label": "Lease Deed Registration No."
+  },
+  {
+   "fieldname": "index_ii_particulars",
+   "fieldtype": "Data",
+   "label": "Index II Particulars"
+  },
+  {
+   "fieldname": "office_address_of_the_executing_authority",
+   "fieldtype": "Data",
+   "label": "Office Address of the Executing Authority"
+  },
+  {
+   "fieldname": "name_of_the_lessor",
+   "fieldtype": "Data",
+   "label": "Name of the Lessor"
+  },
+  {
+   "fieldname": "lease_tenure_years",
+   "fieldtype": "Data",
+   "label": "Lease Tenure (Years)"
+  },
+  {
+   "fieldname": "lease_end_date",
+   "fieldtype": "Date",
+   "label": "Lease End Date"
+  },
+  {
+   "fieldname": "boundaries",
+   "fieldtype": "Select",
+   "label": "Boundaries ",
+   "options": "\nEast\nWest\nSouth\nWest"
+  },
+  {
+   "fieldname": "land_type",
+   "fieldtype": "Select",
+   "label": "Land Type ",
+   "options": "\nFree hold\nLease hold"
+  },
+  {
+   "fieldname": "minimum__of_construction",
+   "fieldtype": "Data",
+   "label": "Minimum % of Construction"
+  },
+  {
+   "fieldname": "column_break_llil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plot_area_sqm",
+   "fieldtype": "Data",
+   "label": "Plot Area (Sqm.)"
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Data",
+   "label": "Registration Date "
+  },
+  {
+   "fieldname": "executing_authority",
+   "fieldtype": "Data",
+   "label": "Executing Authority"
+  },
+  {
+   "fieldname": "premium_amount_paid_rs",
+   "fieldtype": "Data",
+   "label": "Premium amount Paid (Rs.)"
+  },
+  {
+   "fieldname": "address_of_the_lease",
+   "fieldtype": "Data",
+   "label": "Address of the Lease"
+  },
+  {
+   "fieldname": "lease_start_date",
+   "fieldtype": "Date",
+   "label": "Lease Start Date"
+  },
+  {
+   "fieldname": "nature_of_lease",
+   "fieldtype": "Select",
+   "label": "Nature of Lease",
+   "options": "\nGovernment\nSemi-Government\nPrivate"
+  },
+  {
+   "fieldname": "purpose_of_land_usage",
+   "fieldtype": "Data",
+   "label": "Purpose of Land Usage"
+  },
+  {
+   "fieldname": "time_limit_for_completion_for_construction",
+   "fieldtype": "Data",
+   "label": "Time Limit for Completion for Construction "
+  },
+  {
+   "fieldname": "_of_construction_completed",
+   "fieldtype": "Data",
+   "label": "% of Construction Completed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-16 16:25:28.440241",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Plot Registration",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

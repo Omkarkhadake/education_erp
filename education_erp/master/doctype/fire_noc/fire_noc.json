@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-18 11:03:12.133297",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_building",
+  "certificate_no",
+  "type_of_noc",
+  "regulating_body",
+  "column_break_dwrh",
+  "plot_area_sqm",
+  "certificate_date",
+  "noc_valid_from",
+  "issuing_authority",
+  "column_break_cisn",
+  "no_of_floors",
+  "builtup_area_sqm",
+  "noc_valid_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_building",
+   "fieldtype": "Data",
+   "label": "Name of the building"
+  },
+  {
+   "fieldname": "builtup_area_sqm",
+   "fieldtype": "Data",
+   "label": "Builtup Area (Sqm.)"
+  },
+  {
+   "fieldname": "certificate_no",
+   "fieldtype": "Data",
+   "label": "Certificate No."
+  },
+  {
+   "fieldname": "type_of_noc",
+   "fieldtype": "Select",
+   "label": "Type of NoC ",
+   "options": "\nProvisional\nFinal"
+  },
+  {
+   "fieldname": "column_break_dwrh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plot_area_sqm",
+   "fieldtype": "Data",
+   "label": "Plot Area (Sqm.)"
+  },
+  {
+   "fieldname": "no_of_floors",
+   "fieldtype": "Data",
+   "label": "No. of Floors"
+  },
+  {
+   "fieldname": "certificate_date",
+   "fieldtype": "Date",
+   "label": "Certificate Date"
+  },
+  {
+   "fieldname": "noc_valid_to",
+   "fieldtype": "Date",
+   "label": "NoC Valid To"
+  },
+  {
+   "fieldname": "regulating_body",
+   "fieldtype": "Data",
+   "label": "Regulating Body"
+  },
+  {
+   "fieldname": "noc_valid_from",
+   "fieldtype": "Date",
+   "label": "NoC Valid From"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "column_break_cisn",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-18 11:05:26.500332",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Fire Noc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

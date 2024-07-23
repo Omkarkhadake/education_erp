@@ -48,7 +48,8 @@
    "fieldname": "document_name",
    "fieldtype": "Link",
    "label": "Document Name",
-   "options": "Document"
+   "options": "Document",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_bxpb",
@@ -57,47 +58,55 @@
   {
    "fieldname": "document_number",
    "fieldtype": "Data",
-   "label": "Document Number"
+   "label": "Document Number",
+   "reqd": 1
   },
   {
    "fieldname": "default_custodian_email",
    "fieldtype": "Data",
    "label": "Default Custodian Email",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "date_of_movement",
    "fieldtype": "Date",
    "label": "Date of Movement",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "default_custodian",
    "fieldtype": "Data",
    "label": "Default Custodian",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "document_receiver",
    "fieldtype": "Link",
    "label": "Document Receiver",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "document_provider",
    "fieldtype": "Link",
    "label": "Document Provider",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "document_end_date",
    "fieldtype": "Date",
-   "label": "To Date"
+   "label": "To Date",
+   "reqd": 1
   },
   {
    "fieldname": "document_start_date",
    "fieldtype": "Date",
-   "label": "From Date"
+   "label": "From Date",
+   "reqd": 1
   },
   {
    "allow_on_submit": 1,
@@ -117,7 +126,8 @@
    "fieldname": "mode_of_delivery",
    "fieldtype": "Link",
    "label": "Mode of Delivery",
-   "options": "Mode of Delivery"
+   "options": "Mode of Delivery",
+   "reqd": 1
   },
   {
    "allow_on_submit": 1,
@@ -135,7 +145,8 @@
    "fieldname": "purpose_of_movement",
    "fieldtype": "Link",
    "label": "Purpose of Movement",
-   "options": "Purpose of Movement"
+   "options": "Purpose of Movement",
+   "reqd": 1
   },
   {
    "allow_on_submit": 1,
@@ -149,14 +160,15 @@
    "fetch_from": "document_receiver.full_name",
    "fieldname": "document_receiver_name",
    "fieldtype": "Data",
-   "label": "Document Receiver Name"
+   "label": "Document Receiver Name",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2024-07-03 09:10:06.926616",
+ "modified": "2024-07-11 11:55:20.857617",
  "modified_by": "Administrator",
  "module": "Document Management System",
  "name": "Movement of Original Document",

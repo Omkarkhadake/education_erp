@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-19 12:29:08.433497",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_no",
+  "no_of_floors",
+  "certificate_no",
+  "issuing_authority",
+  "site_inspection_report_date",
+  "architect_licence_no",
+  "column_break_pdfk",
+  "name_of_the_building",
+  "total_build_up_area",
+  "certificate_date",
+  "issuing_body",
+  "name_of_architect_supervisor"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No"
+  },
+  {
+   "fieldname": "no_of_floors",
+   "fieldtype": "Data",
+   "label": "No. of Floors "
+  },
+  {
+   "fieldname": "certificate_no",
+   "fieldtype": "Data",
+   "label": "Certificate No."
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "site_inspection_report_date",
+   "fieldtype": "Date",
+   "label": "Site Inspection Report Date"
+  },
+  {
+   "fieldname": "architect_licence_no",
+   "fieldtype": "Data",
+   "label": "Architect Licence No."
+  },
+  {
+   "fieldname": "column_break_pdfk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_the_building",
+   "fieldtype": "Data",
+   "label": "Name of the building"
+  },
+  {
+   "fieldname": "total_build_up_area",
+   "fieldtype": "Data",
+   "label": "Total Built-up area (Sqm.)"
+  },
+  {
+   "fieldname": "certificate_date",
+   "fieldtype": "Date",
+   "label": "Certificate Date"
+  },
+  {
+   "fieldname": "issuing_body",
+   "fieldtype": "Data",
+   "label": "Issuing Body"
+  },
+  {
+   "fieldname": "name_of_architect_supervisor",
+   "fieldtype": "Data",
+   "label": "Name of Architect Supervisor"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 10:07:31.795753",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Building Completion Certificates",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

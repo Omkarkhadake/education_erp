@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-22 16:11:28.171340",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_no",
+  "approved_fsi",
+  "approved_build_up_area",
+  "fsi_consumed_as_per_revised_fsi",
+  "balence_build_up_area_available",
+  "column_break_zuih",
+  "total_plot_area_available",
+  "total_plot_area_as_per_approved_fsi",
+  "fsi_consumed_actual",
+  "balance_fsi_available"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No."
+  },
+  {
+   "fieldname": "approved_fsi",
+   "fieldtype": "Data",
+   "label": "Approved FSI "
+  },
+  {
+   "fieldname": "approved_build_up_area",
+   "fieldtype": "Data",
+   "label": "Approved Built-up Area"
+  },
+  {
+   "fieldname": "fsi_consumed_as_per_revised_fsi",
+   "fieldtype": "Data",
+   "label": "FSI Consumed (As per Revised FSI)"
+  },
+  {
+   "fieldname": "balence_build_up_area_available",
+   "fieldtype": "Data",
+   "label": "Balance Built-up Area Available"
+  },
+  {
+   "fieldname": "column_break_zuih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_plot_area_available",
+   "fieldtype": "Data",
+   "label": "Total Plot Area Available"
+  },
+  {
+   "fieldname": "total_plot_area_as_per_approved_fsi",
+   "fieldtype": "Data",
+   "label": "Total Plot Area as per approved FSI"
+  },
+  {
+   "fieldname": "fsi_consumed_actual",
+   "fieldtype": "Data",
+   "label": "FSI Consumed (Actual)"
+  },
+  {
+   "fieldname": "balance_fsi_available",
+   "fieldtype": "Data",
+   "label": "Balance FSI Available"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 16:13:30.439681",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Floor Space Index",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

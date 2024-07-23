@@ -1,4 +1,6 @@
 
+# Working code
+
 import frappe
 from frappe.model.document import Document
 from frappe.utils import nowdate
@@ -18,7 +20,6 @@ class Document(Document):
     def reject(self):
         self.status = "Rejected"
         self.save()
-            
 
 @frappe.whitelist()
 def get_document_details(doc_id):

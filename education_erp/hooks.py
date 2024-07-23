@@ -227,3 +227,6 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# override_whitelisted_methods = {
+#     "frappe.desk.reportview.get": "education_erp.document_management_system.doctype.document.custom_document.filter_document_list"
+# }

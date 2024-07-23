@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestDocumentName(FrappeTestCase):
+class TestDMSUserAccess(FrappeTestCase):
 	pass

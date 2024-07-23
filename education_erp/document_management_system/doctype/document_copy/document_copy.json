@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{Type}-{Document Revision}",
+ "creation": "2024-07-10 10:12:48.588545",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "attachment",
+  "document_revision",
+  "column_break_bpyu",
+  "format",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Document Copy Type"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bpyu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "format",
+   "fieldtype": "Data",
+   "label": "Format"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "document_revision",
+   "fieldtype": "Link",
+   "label": "Document Revision",
+   "options": "Document Revision"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-10 14:14:02.951420",
+ "modified_by": "Administrator",
+ "module": "Document Management System",
+ "name": "Document Copy",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

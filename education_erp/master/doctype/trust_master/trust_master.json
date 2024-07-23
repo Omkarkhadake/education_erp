@@ -1,0 +1,241 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name_sociery__trust",
+ "creation": "2024-07-16 14:57:34.295103",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "registration_details_tab",
+  "overview_section",
+  "name_sociery__trust",
+  "registration_no",
+  "registered_with",
+  "income_tax_pan",
+  "column_break_kvqy",
+  "year_of_establishment",
+  "registration_date",
+  "issuing_authority",
+  "gst_no",
+  "address_section",
+  "city",
+  "state",
+  "pin_code",
+  "primary_email",
+  "std_code",
+  "fax",
+  "column_break_qxus",
+  "district",
+  "landmark_if_any",
+  "website",
+  "alternate_email",
+  "landline",
+  "details_of_representative_section",
+  "name1",
+  "column_break_khor",
+  "email",
+  "registration_documents_tab",
+  "registration_certificates",
+  "section_break_qgvf",
+  "trust_registration_certificate",
+  "column_break_sayx",
+  "society_registration_certificate"
+ ],
+ "fields": [
+  {
+   "fieldname": "registration_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Registration Details"
+  },
+  {
+   "fieldname": "name_sociery__trust",
+   "fieldtype": "Data",
+   "label": "Name Sociery / Trust",
+   "unique": 1
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Registration No."
+  },
+  {
+   "fieldname": "registered_with",
+   "fieldtype": "Data",
+   "label": "Registered With "
+  },
+  {
+   "fieldname": "income_tax_pan",
+   "fieldtype": "Data",
+   "label": "Income Tax PAN "
+  },
+  {
+   "fieldname": "column_break_kvqy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year_of_establishment",
+   "fieldtype": "Date",
+   "label": "Year of Establishment"
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "gst_no",
+   "fieldtype": "Data",
+   "label": "GST No."
+  },
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Section Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "primary_email",
+   "fieldtype": "Data",
+   "label": "Primary Email"
+  },
+  {
+   "fieldname": "std_code",
+   "fieldtype": "Data",
+   "label": "STD Code"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "column_break_qxus",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "landmark_if_any",
+   "fieldtype": "Data",
+   "label": "Landmark, if any"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "alternate_email",
+   "fieldtype": "Data",
+   "label": "Alternate Email"
+  },
+  {
+   "fieldname": "landline",
+   "fieldtype": "Data",
+   "label": "Landline"
+  },
+  {
+   "fieldname": "details_of_representative_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Representative"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_khor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "registration_documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Registration Documents"
+  },
+  {
+   "fieldname": "registration_certificates",
+   "fieldtype": "Table",
+   "label": "Registration Certificates ",
+   "options": "Registration Certificates and Approvals"
+  },
+  {
+   "fieldname": "section_break_qgvf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trust_registration_certificate",
+   "fieldtype": "Attach",
+   "label": "Trust Registration Certificate"
+  },
+  {
+   "fieldname": "society_registration_certificate",
+   "fieldtype": "Attach",
+   "label": "Society Registration Certificate"
+  },
+  {
+   "fieldname": "column_break_sayx",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-16 15:15:47.111017",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Trust Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

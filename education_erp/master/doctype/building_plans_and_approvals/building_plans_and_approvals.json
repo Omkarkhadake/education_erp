@@ -8,13 +8,13 @@
   "building_name",
   "name_of_the_owner",
   "plan_approval_date",
-  "address_of_the_approving_authority",
   "no_of_floors",
   "total_no_of_rooms_on_each_floor",
   "room_category",
   "room_type",
   "room_carpet_area_in_sqm",
   "maximum_seating_capacity",
+  "address_of_the_approving_authority",
   "column_break_ksac",
   "plot_no",
   "plan_approval_nooffice_letter_no",
@@ -22,10 +22,10 @@
   "approving_body",
   "total_no_of_drawing",
   "drawing_no",
-  "drawing_description",
   "room_no",
   "room_build_up_area",
-  "approved_build_up_area"
+  "approved_build_up_area",
+  "drawing_description"
  ],
  "fields": [
   {
@@ -139,7 +139,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-23 16:24:36.482078",
+ "modified": "2024-07-24 10:08:13.601175",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Building Plans and Approvals",

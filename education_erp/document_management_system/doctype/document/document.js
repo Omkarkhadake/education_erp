@@ -163,3 +163,4 @@ function routeToMovementOfOriginalDocument(documentDetails) {
         frappe.set_route("Form", "Movement of Original Document", doc.name);
     });
 }
+

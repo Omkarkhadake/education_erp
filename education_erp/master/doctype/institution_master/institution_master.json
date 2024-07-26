@@ -1,0 +1,241 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-26 10:01:52.207644",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_trust",
+  "year_of_establishment",
+  "total_campus_area_in_acres",
+  "dte_code",
+  "university_affiliation_code",
+  "column_break_hkwp",
+  "name_of_the_institution",
+  "location_of_the_college",
+  "total_build_up_area",
+  "university_examination_code",
+  "national_academic_depository_nad_no",
+  "column_break_tcmb",
+  "type_of_institution_by_shift",
+  "type_of_institution_by_gender",
+  "aishe_code",
+  "ara_code",
+  "national_digital_library_ndl_no",
+  "section_break_lwml",
+  "quality_policy",
+  "section_break_sgyo",
+  "institute_mission_and_vision",
+  "institute_goals_section",
+  "long_and_short_term_goal",
+  "dte_seat_allocation_percentages_tab",
+  "maharashtra_seats_65_of_sanctioned_intake",
+  "institute_level_seats_20_of_sanctioned_intake",
+  "ews_intake_10_of_sanctioned_intake",
+  "jksss_intake",
+  "direct_second_year10_of_sanctioned_intake",
+  "column_break_yput",
+  "all_india_seats_15_of_sanctioned_intake",
+  "tfws_intake_5_of_sanctioned_intake",
+  "jk_intake",
+  "others_if_any"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_trust",
+   "fieldtype": "Data",
+   "label": "Name of the Trust"
+  },
+  {
+   "fieldname": "name_of_the_institution",
+   "fieldtype": "Data",
+   "label": "Name of the Institution"
+  },
+  {
+   "fieldname": "year_of_establishment",
+   "fieldtype": "Date",
+   "label": "Year of Establishment"
+  },
+  {
+   "fieldname": "quality_policy",
+   "fieldtype": "Text Editor",
+   "label": "Quality Policy"
+  },
+  {
+   "fieldname": "location_of_the_college",
+   "fieldtype": "Data",
+   "label": "Location of the College"
+  },
+  {
+   "fieldname": "type_of_institution_by_gender",
+   "fieldtype": "Select",
+   "label": "Type of Institution by Gender",
+   "options": "\nWomen\nCo-Ed"
+  },
+  {
+   "fieldname": "type_of_institution_by_shift",
+   "fieldtype": "Select",
+   "label": "Type of Institution by Shift",
+   "options": "\nRegular Shift\nSecond Shift\nNight Shift"
+  },
+  {
+   "fieldname": "total_campus_area_in_acres",
+   "fieldtype": "Data",
+   "label": "Total Campus Area (in Acres)"
+  },
+  {
+   "fieldname": "total_build_up_area",
+   "fieldtype": "Data",
+   "label": "Total Built-up Area (in Sq. Mtrs.)"
+  },
+  {
+   "fieldname": "dte_code",
+   "fieldtype": "Data",
+   "label": "DTE Code"
+  },
+  {
+   "fieldname": "aishe_code",
+   "fieldtype": "Data",
+   "label": "AISHE Code"
+  },
+  {
+   "fieldname": "university_affiliation_code",
+   "fieldtype": "Data",
+   "label": "University Affiliation Code"
+  },
+  {
+   "fieldname": "university_examination_code",
+   "fieldtype": "Data",
+   "label": "University Examination Code"
+  },
+  {
+   "fieldname": "ara_code",
+   "fieldtype": "Data",
+   "label": "ARA Code"
+  },
+  {
+   "fieldname": "national_digital_library_ndl_no",
+   "fieldtype": "Data",
+   "label": "National Digital Library (NDL) No."
+  },
+  {
+   "fieldname": "national_academic_depository_nad_no",
+   "fieldtype": "Data",
+   "label": "National Academic Depository (NAD) No."
+  },
+  {
+   "fieldname": "column_break_hkwp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tcmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_lwml",
+   "fieldtype": "Section Break",
+   "label": "Quality Policy"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_sgyo",
+   "fieldtype": "Section Break",
+   "label": "Institute Mission and Vision"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "institute_goals_section",
+   "fieldtype": "Section Break",
+   "label": "Institute Goals"
+  },
+  {
+   "fieldname": "long_and_short_term_goal",
+   "fieldtype": "Text Editor",
+   "label": "Long and Short Term Goal"
+  },
+  {
+   "fieldname": "institute_mission_and_vision",
+   "fieldtype": "Text Editor",
+   "label": "Institute Mission and Vision"
+  },
+  {
+   "fieldname": "dte_seat_allocation_percentages_tab",
+   "fieldtype": "Tab Break",
+   "label": "DTE Seat Allocation Percentages"
+  },
+  {
+   "fieldname": "maharashtra_seats_65_of_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Maharashtra Seats (65% of Sanctioned Intake)"
+  },
+  {
+   "fieldname": "all_india_seats_15_of_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "All India Seats (15% of Sanctioned Intake)"
+  },
+  {
+   "fieldname": "institute_level_seats_20_of_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Institute Level Seats (20% of Sanctioned Intake)"
+  },
+  {
+   "fieldname": "tfws_intake_5_of_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "TFWS Intake (5% of Sanctioned Intake)"
+  },
+  {
+   "fieldname": "ews_intake_10_of_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "EWS Intake (10% of Sanctioned Intake)"
+  },
+  {
+   "fieldname": "jk_intake",
+   "fieldtype": "Data",
+   "label": "JK Intake"
+  },
+  {
+   "fieldname": "jksss_intake",
+   "fieldtype": "Data",
+   "label": "JKSSS Intake"
+  },
+  {
+   "fieldname": "others_if_any",
+   "fieldtype": "Data",
+   "label": "Others, if any"
+  },
+  {
+   "fieldname": "direct_second_year10_of_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Direct Second Year(10% of Sanctioned Intake)"
+  },
+  {
+   "fieldname": "column_break_yput",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-26 11:14:07.626386",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Institution Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

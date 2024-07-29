@@ -6,33 +6,38 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "lease_deed_section",
   "plot_no",
-  "lease_deed_registration_no",
+  "land_type",
   "index_ii_particulars",
   "office_address_of_the_executing_authority",
-  "name_of_the_lessor",
-  "lease_tenure_years",
-  "lease_end_date",
   "boundaries",
-  "land_type",
   "minimum__of_construction",
+  "_of_construction_completed",
   "column_break_llil",
   "plot_area_sqm",
   "registration_date",
   "executing_authority",
   "premium_amount_paid_rs",
-  "address_of_the_lease",
-  "lease_start_date",
-  "nature_of_lease",
   "purpose_of_land_usage",
   "time_limit_for_completion_for_construction",
-  "_of_construction_completed"
+  "lease_information_tab",
+  "section_break_xuae",
+  "name_of_the_lesser",
+  "lease_start_date",
+  "address_of_the_lease",
+  "lease_deed_registration_no",
+  "column_break_cobd",
+  "lease_tenure_years",
+  "lease_end_date",
+  "nature_of_lease"
  ],
  "fields": [
   {
    "fieldname": "plot_no",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Plot No. ",
+   "options": "Plot Information",
    "unique": 1
   },
   {
@@ -49,11 +54,6 @@
    "fieldname": "office_address_of_the_executing_authority",
    "fieldtype": "Data",
    "label": "Office Address of the Executing Authority"
-  },
-  {
-   "fieldname": "name_of_the_lessor",
-   "fieldtype": "Data",
-   "label": "Name of the Lessor"
   },
   {
    "fieldname": "lease_tenure_years",
@@ -87,6 +87,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "plot_no.plot_area_in_sqm",
    "fieldname": "plot_area_sqm",
    "fieldtype": "Data",
    "label": "Plot Area (Sqm.)"
@@ -136,11 +137,35 @@
    "fieldname": "_of_construction_completed",
    "fieldtype": "Data",
    "label": "% of Construction Completed"
+  },
+  {
+   "fieldname": "lease_deed_section",
+   "fieldtype": "Section Break",
+   "label": "Lease Deed"
+  },
+  {
+   "fieldname": "name_of_the_lesser",
+   "fieldtype": "Data",
+   "label": "Name of the Lesser"
+  },
+  {
+   "fieldname": "section_break_xuae",
+   "fieldtype": "Section Break",
+   "label": "Lease Information"
+  },
+  {
+   "fieldname": "column_break_cobd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lease_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lease Information"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-16 16:25:28.440241",
+ "modified": "2024-07-26 18:50:55.966839",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Plot Registration",

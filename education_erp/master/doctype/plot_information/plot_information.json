@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:plot_number",
  "creation": "2024-07-16 15:53:01.092604",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -37,24 +38,30 @@
   "receipt_date",
   "sub_division_of_plots",
   "total_plot_area_in_sqm",
+  "letter_number",
   "reason_for_sub_division",
-  "remarks",
-  "column_break_aigo",
   "brief_document_particulars",
+  "issuing_body_subdivision",
+  "column_break_aigo",
   "plot_area_subdivided_in_sqm",
+  "letter_date_subdivision",
+  "issuing_authority_subdivision",
+  "remarks",
   "amalgamation__merger_of_plots_tab",
-  "existing_plot_no",
-  "amalgamated_plot_no",
+  "existing_plot_number",
   "total_plot_area_after_amalgamation_in_sqm",
-  "amalgamation_letter_no",
-  "amalgamation__brief_document_particulars",
-  "reason_for_amalgamationmerger",
   "column_break_glii",
   "net_plot_area_of_existing_plot_in_sqm",
   "net_plot_area_of_amalgamated_plot_in_sqm",
-  "amalgamation_letter_date",
-  "amalgamation_issuing_body",
+  "section_break_zjxg",
+  "amalgamation_letter_no",
   "amalgamation_issuing_authority",
+  "amalgamation__brief_document_particulars",
+  "amalgamation_issuing_body",
+  "column_break_flnr",
+  "amalgamation_letter_date",
+  "amalgamated_plot_number",
+  "reason_for_amalgamationmerger",
   "approved_maps_and_layouts_tab",
   "demarcation_map",
   "khasra_plan",
@@ -71,7 +78,8 @@
   {
    "fieldname": "plot_number",
    "fieldtype": "Data",
-   "label": "Plot Number"
+   "label": "Plot Number",
+   "unique": 1
   },
   {
    "fieldname": "plot_type",
@@ -82,7 +90,7 @@
   {
    "fieldname": "plot_area_in_sqm",
    "fieldtype": "Data",
-   "label": "Plot Area in Sqm"
+   "label": "Total Plot Area in Sqm"
   },
   {
    "fieldname": "plot_conversion_if_any",
@@ -251,16 +259,6 @@
    "label": "Amalgamation / Merger of Plots"
   },
   {
-   "fieldname": "existing_plot_no",
-   "fieldtype": "Data",
-   "label": "Existing Plot No."
-  },
-  {
-   "fieldname": "amalgamated_plot_no",
-   "fieldtype": "Data",
-   "label": "Amalgamated Plot No."
-  },
-  {
    "fieldname": "total_plot_area_after_amalgamation_in_sqm",
    "fieldtype": "Data",
    "label": "Total Plot Area after Amalgamation in Sqm."
@@ -337,14 +335,53 @@
    "fieldname": "latitude_and_longitude_of_the_buildings",
    "fieldtype": "Data",
    "label": "Latitude and Longitude of the Buildings"
+  },
+  {
+   "fieldname": "letter_number",
+   "fieldtype": "Data",
+   "label": "Letter Number"
+  },
+  {
+   "fieldname": "letter_date_subdivision",
+   "fieldtype": "Data",
+   "label": "Letter Date"
+  },
+  {
+   "fieldname": "issuing_authority_subdivision",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "issuing_body_subdivision",
+   "fieldtype": "Data",
+   "label": "Issuing Body"
+  },
+  {
+   "fieldname": "existing_plot_number",
+   "fieldtype": "Data",
+   "label": "Existing Plot Number"
+  },
+  {
+   "fieldname": "amalgamated_plot_number",
+   "fieldtype": "Data",
+   "label": "Amalgamated Plot Number"
+  },
+  {
+   "fieldname": "section_break_zjxg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_flnr",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-19 12:32:10.399144",
+ "modified": "2024-07-26 18:45:40.761557",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Plot Information",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -362,5 +399,8 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

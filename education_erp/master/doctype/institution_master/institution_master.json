@@ -10,18 +10,22 @@
   "total_campus_area_in_acres",
   "dte_code",
   "university_affiliation_code",
+  "affiliating_university_name",
+  "type_of_institution",
   "column_break_hkwp",
   "name_of_the_institution",
   "location_of_the_college",
   "total_build_up_area",
   "university_examination_code",
   "national_academic_depository_nad_no",
+  "minority",
   "column_break_tcmb",
   "type_of_institution_by_shift",
   "type_of_institution_by_gender",
   "aishe_code",
   "ara_code",
   "national_digital_library_ndl_no",
+  "ownership_status",
   "section_break_lwml",
   "quality_policy",
   "section_break_sgyo",
@@ -38,7 +42,76 @@
   "all_india_seats_15_of_sanctioned_intake",
   "tfws_intake_5_of_sanctioned_intake",
   "jk_intake",
-  "others_if_any"
+  "others_if_any",
+  "student_intake_tab",
+  "maximum_sanctioned_intake",
+  "jk_intake_student_intake",
+  "jksss_intake_student_intake",
+  "total_sanctioned_intake",
+  "grand_total_of_student_intake",
+  "estimated_fee_structure",
+  "column_break_zsnl",
+  "tfws_intake",
+  "ews_intake",
+  "other",
+  "over_and_above_sanctioned_intake",
+  "direct_second_year_dse",
+  "student_admissions_summary_section",
+  "no_of_students_admitted",
+  "percentage_of_admitted_students_to_sanctioned_intake",
+  "faculty_students_ratio",
+  "head_of_the_institution_tab",
+  "details_of_head_of_the_institution_section",
+  "user_id",
+  "designation",
+  "university_approval_status",
+  "landline",
+  "mobile_number",
+  "column_break_fwie",
+  "name1",
+  "status_of_appointment",
+  "std_code",
+  "fax",
+  "official_email",
+  "details_of_alternate_contact_person_section",
+  "user_id_alternate_person",
+  "std_code_alternate_person",
+  "landline_alternate_person",
+  "mobile_number_alternate_person",
+  "column_break_ihia",
+  "designation_alternate_person",
+  "name_of_alternate_person",
+  "fax_alternate_person",
+  "academic_programmers_offered_tab",
+  "name_of_the_programmed",
+  "programme_duration",
+  "programme_level",
+  "section_break_fdet",
+  "program",
+  "campus_information_tab",
+  "campus_section",
+  "does_the_college_have_its_own_building",
+  "canteen_and_hostel_facilities_available",
+  "computer_laboratories",
+  "placements",
+  "smart_classrooms",
+  "column_break_dtwv",
+  "sports_facilities_available",
+  "medical_centre",
+  "counselling_and_guidance",
+  "library",
+  "seminar_halls",
+  "approval__recognition_accreditation_status__rankings_section",
+  "aicte",
+  "dte_maharashtra",
+  "savitribai_phule_pune_university",
+  "university_of_mumbai",
+  "naac",
+  "nba",
+  "ugc",
+  "ara",
+  "aishe",
+  "nirf"
  ],
  "fields": [
   {
@@ -212,11 +285,393 @@
   {
    "fieldname": "column_break_yput",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student_intake_tab",
+   "fieldtype": "Tab Break",
+   "label": "Student Intake"
+  },
+  {
+   "fieldname": "maximum_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Maximum Sanctioned Intake"
+  },
+  {
+   "fieldname": "column_break_zsnl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tfws_intake",
+   "fieldtype": "Data",
+   "label": "TFWS Intake"
+  },
+  {
+   "fieldname": "ews_intake",
+   "fieldtype": "Data",
+   "label": "EWS Intake"
+  },
+  {
+   "fieldname": "jk_intake_student_intake",
+   "fieldtype": "Data",
+   "label": "JK Intake"
+  },
+  {
+   "fieldname": "jksss_intake_student_intake",
+   "fieldtype": "Data",
+   "label": "JKSSS Intake"
+  },
+  {
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "label": "Others, if any"
+  },
+  {
+   "fieldname": "total_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Total Sanctioned Intake"
+  },
+  {
+   "fieldname": "over_and_above_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Over and above Sanctioned Intake"
+  },
+  {
+   "fieldname": "grand_total_of_student_intake",
+   "fieldtype": "Data",
+   "label": "Grand Total of Student Intake"
+  },
+  {
+   "fieldname": "direct_second_year_dse",
+   "fieldtype": "Data",
+   "label": "Direct Second Year (DSE)"
+  },
+  {
+   "fieldname": "estimated_fee_structure",
+   "fieldtype": "Data",
+   "label": "Estimated Fee Structure"
+  },
+  {
+   "fieldname": "head_of_the_institution_tab",
+   "fieldtype": "Tab Break",
+   "label": "Head of the Institution"
+  },
+  {
+   "fieldname": "details_of_head_of_the_institution_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Head of the Institution"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "User"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "university_approval_status",
+   "fieldtype": "Select",
+   "label": "University Approval Status",
+   "options": "\nApproved\nUnapproved"
+  },
+  {
+   "fieldname": "landline",
+   "fieldtype": "Data",
+   "label": "Landline"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "column_break_fwie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "status_of_appointment",
+   "fieldtype": "Select",
+   "label": "Status of Appointment",
+   "options": "\nRegular\nAdhoc\nTemporary"
+  },
+  {
+   "fieldname": "std_code",
+   "fieldtype": "Data",
+   "label": "STD Code"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "official_email",
+   "fieldtype": "Data",
+   "label": "Official Email"
+  },
+  {
+   "fieldname": "details_of_alternate_contact_person_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Alternate Contact Person"
+  },
+  {
+   "fieldname": "user_id_alternate_person",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "User"
+  },
+  {
+   "fieldname": "designation_alternate_person",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "name_of_alternate_person",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "std_code_alternate_person",
+   "fieldtype": "Data",
+   "label": "STD Code"
+  },
+  {
+   "fieldname": "landline_alternate_person",
+   "fieldtype": "Data",
+   "label": "Landline"
+  },
+  {
+   "fieldname": "fax_alternate_person",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "mobile_number_alternate_person",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "column_break_ihia",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "affiliating_university_name",
+   "fieldtype": "Link",
+   "label": "Affiliating University Name",
+   "options": "University"
+  },
+  {
+   "fieldname": "type_of_institution",
+   "fieldtype": "Select",
+   "label": "Type of Institution",
+   "options": "\nUniversity\nDeemed University\nGovernment Aided\nAutonomous\nPrivate"
+  },
+  {
+   "fieldname": "minority",
+   "fieldtype": "Select",
+   "label": "Minority",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "ownership_status",
+   "fieldtype": "Select",
+   "label": "Ownership Status",
+   "options": "\nCentral Government\nState Government\nGovernment Aided\nTrust\nSociety\nSection 8 Company\nAny other"
+  },
+  {
+   "fieldname": "academic_programmers_offered_tab",
+   "fieldtype": "Tab Break",
+   "label": "Academic Programmers Offered"
+  },
+  {
+   "fieldname": "name_of_the_programmed",
+   "fieldtype": "Data",
+   "label": "Name of the Programmed "
+  },
+  {
+   "fieldname": "programme_level",
+   "fieldtype": "Select",
+   "label": "Programme Level",
+   "options": "\nCertification\nDiploma\nUndergraduate\nPostgraduate\nDoctorate"
+  },
+  {
+   "fieldname": "programme_duration",
+   "fieldtype": "Data",
+   "label": "Programme Duration"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Table",
+   "label": "Program",
+   "options": "Program Child Table"
+  },
+  {
+   "fieldname": "section_break_fdet",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student_admissions_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Student Admissions Summary"
+  },
+  {
+   "fieldname": "no_of_students_admitted",
+   "fieldtype": "Data",
+   "label": "No. of Students Admitted"
+  },
+  {
+   "fieldname": "percentage_of_admitted_students_to_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Percentage of Admitted Students to Sanctioned Intake "
+  },
+  {
+   "fieldname": "faculty_students_ratio",
+   "fieldtype": "Data",
+   "label": "Faculty Students Ratio"
+  },
+  {
+   "fieldname": "campus_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Campus Information"
+  },
+  {
+   "fieldname": "does_the_college_have_its_own_building",
+   "fieldtype": "Data",
+   "label": "Does the College have its own building"
+  },
+  {
+   "fieldname": "sports_facilities_available",
+   "fieldtype": "Data",
+   "label": "Sports facilities available"
+  },
+  {
+   "fieldname": "canteen_and_hostel_facilities_available",
+   "fieldtype": "Data",
+   "label": "Canteen and Hostel facilities available"
+  },
+  {
+   "fieldname": "medical_centre",
+   "fieldtype": "Data",
+   "label": "Medical Centre"
+  },
+  {
+   "fieldname": "computer_laboratories",
+   "fieldtype": "Data",
+   "label": "Computer Laboratories"
+  },
+  {
+   "fieldname": "counselling_and_guidance",
+   "fieldtype": "Data",
+   "label": "Counselling and Guidance"
+  },
+  {
+   "fieldname": "placements",
+   "fieldtype": "Data",
+   "label": "Placements "
+  },
+  {
+   "fieldname": "library",
+   "fieldtype": "Data",
+   "label": "Library"
+  },
+  {
+   "fieldname": "smart_classrooms",
+   "fieldtype": "Data",
+   "label": "Smart Classrooms"
+  },
+  {
+   "fieldname": "seminar_halls",
+   "fieldtype": "Data",
+   "label": "Seminar Halls"
+  },
+  {
+   "fieldname": "column_break_dtwv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "campus_section",
+   "fieldtype": "Section Break",
+   "label": "Campus"
+  },
+  {
+   "fieldname": "approval__recognition_accreditation_status__rankings_section",
+   "fieldtype": "Section Break",
+   "label": "Approval / Recognition/ Accreditation Status / Rankings"
+  },
+  {
+   "default": "0",
+   "fieldname": "aicte",
+   "fieldtype": "Check",
+   "label": "AICTE"
+  },
+  {
+   "default": "0",
+   "fieldname": "dte_maharashtra",
+   "fieldtype": "Check",
+   "label": "DTE, Maharashtra"
+  },
+  {
+   "default": "0",
+   "fieldname": "savitribai_phule_pune_university",
+   "fieldtype": "Check",
+   "label": "Savitribai Phule Pune University"
+  },
+  {
+   "default": "0",
+   "fieldname": "university_of_mumbai",
+   "fieldtype": "Check",
+   "label": "University of Mumbai"
+  },
+  {
+   "default": "0",
+   "fieldname": "naac",
+   "fieldtype": "Check",
+   "label": "NAAC"
+  },
+  {
+   "default": "0",
+   "fieldname": "nba",
+   "fieldtype": "Check",
+   "label": "NBA"
+  },
+  {
+   "default": "0",
+   "fieldname": "ugc",
+   "fieldtype": "Check",
+   "label": "UGC"
+  },
+  {
+   "default": "0",
+   "fieldname": "ara",
+   "fieldtype": "Check",
+   "label": "ARA"
+  },
+  {
+   "default": "0",
+   "fieldname": "aishe",
+   "fieldtype": "Check",
+   "label": "AISHE"
+  },
+  {
+   "default": "0",
+   "fieldname": "nirf",
+   "fieldtype": "Check",
+   "label": "NIRF"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-26 11:14:07.626386",
+ "modified": "2024-07-29 10:29:05.116525",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Institution Master",

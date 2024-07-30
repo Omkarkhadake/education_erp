@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name_of_the_building",
+ "creation": "2024-07-23 16:25:47.007275",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_building",
+  "septic_tanks",
+  "column_break_mgkj",
+  "overhead_tanks",
+  "provisions_for_physically_challenged",
+  "solar_energy_panels_installed",
+  "resources_tab",
+  "no_of_pump_rooms",
+  "no_of_suction_tanks",
+  "no_of_water_treatment_plants",
+  "no_of_vehicular_ramps",
+  "no_of_fire_staircases",
+  "no_of_transformers",
+  "column_break_jzau",
+  "no_of_generators",
+  "no_of_meter_rooms",
+  "no_of_drainage_chambers",
+  "no_of_terraces",
+  "no_of_lifts",
+  "no_of_water_filtration_plants"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_of_generators",
+   "fieldtype": "Data",
+   "label": "No. of Generators"
+  },
+  {
+   "fieldname": "no_of_pump_rooms",
+   "fieldtype": "Data",
+   "label": "No. of Pump Rooms"
+  },
+  {
+   "fieldname": "no_of_suction_tanks",
+   "fieldtype": "Data",
+   "label": "No. of Suction Tanks"
+  },
+  {
+   "fieldname": "no_of_drainage_chambers",
+   "fieldtype": "Data",
+   "label": "No. of Drainage Chambers"
+  },
+  {
+   "fieldname": "no_of_vehicular_ramps",
+   "fieldtype": "Data",
+   "label": "No. of Vehicular Ramps"
+  },
+  {
+   "fieldname": "no_of_water_treatment_plants",
+   "fieldtype": "Data",
+   "label": "No. of Water Treatment Plants"
+  },
+  {
+   "fieldname": "no_of_meter_rooms",
+   "fieldtype": "Data",
+   "label": "No. of Meter Rooms"
+  },
+  {
+   "fieldname": "no_of_transformers",
+   "fieldtype": "Data",
+   "label": "No. of Transformers"
+  },
+  {
+   "fieldname": "no_of_water_filtration_plants",
+   "fieldtype": "Data",
+   "label": "No. of Water Filtration Plants"
+  },
+  {
+   "fieldname": "no_of_lifts",
+   "fieldtype": "Data",
+   "label": "No. of Lifts"
+  },
+  {
+   "fieldname": "no_of_fire_staircases",
+   "fieldtype": "Data",
+   "label": "No. of Fire Staircases"
+  },
+  {
+   "fieldname": "column_break_mgkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_terraces",
+   "fieldtype": "Data",
+   "label": "No. of Terraces"
+  },
+  {
+   "fieldname": "overhead_tanks",
+   "fieldtype": "Select",
+   "label": "Overhead Tanks ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "septic_tanks",
+   "fieldtype": "Select",
+   "label": "Septic Tanks",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "provisions_for_physically_challenged",
+   "fieldtype": "Select",
+   "label": "Provisions for Physically Challenged",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "solar_energy_panels_installed",
+   "fieldtype": "Select",
+   "label": "Solar Energy Panels Installed",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "name_of_the_building",
+   "fieldtype": "Link",
+   "label": "Name of the Building",
+   "options": "Building Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "resources_tab",
+   "fieldtype": "Tab Break",
+   "label": "Resources"
+  },
+  {
+   "fieldname": "column_break_jzau",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 09:54:50.122809",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Building Resources",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -300,13 +300,13 @@
  "is_submittable": 1,
  "links": [
   {
-   "group": "Document Name",
-   "link_doctype": "Document Revision",
+   "group": "Document Version",
+   "link_doctype": "Document Version",
    "link_fieldname": "document_name"
   }
  ],
  "make_attachments_public": 1,
- "modified": "2024-07-23 17:20:15.704918",
+ "modified": "2024-07-30 11:59:24.746526",
  "modified_by": "Administrator",
  "module": "Document Management System",
  "name": "Document",

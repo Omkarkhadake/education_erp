@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-30 09:39:49.643373",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_building",
+  "plot_number",
+  "total_parking_area_available_in_sqm",
+  "parking_area_for_2_wheelers",
+  "parking_area_for_4_wheelers"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_building",
+   "fieldtype": "Data",
+   "label": "Name of the Building "
+  },
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Link",
+   "label": "Plot Number",
+   "options": "Plot Area"
+  },
+  {
+   "fieldname": "total_parking_area_available_in_sqm",
+   "fieldtype": "Data",
+   "label": "Total Parking Area Available (in Sqm.)"
+  },
+  {
+   "fieldname": "parking_area_for_2_wheelers",
+   "fieldtype": "Data",
+   "label": "Parking area for (2 wheelers)"
+  },
+  {
+   "fieldname": "parking_area_for_4_wheelers",
+   "fieldtype": "Data",
+   "label": "Parking area for (4 wheelers)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 09:40:50.822166",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Parking Area",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

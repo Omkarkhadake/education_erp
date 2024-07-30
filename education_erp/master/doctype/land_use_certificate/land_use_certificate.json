@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-29 16:25:17.422345",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "land_certificate_section",
+  "plot_number",
+  "letter_no",
+  "issuing_body",
+  "purpose_of_usage",
+  "column_break_lfze",
+  "plot_area",
+  "letter_date",
+  "issuing_authority",
+  "land_cost_and_valuation_section",
+  "total_cost_of_the_land_as_per_audited_financial_statements_rs",
+  "column_break_eunr",
+  "total_cost_of_the_land_as_per_sro_valuation"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Link",
+   "label": "Plot Number",
+   "options": "Plot Area"
+  },
+  {
+   "fieldname": "letter_no",
+   "fieldtype": "Data",
+   "label": "Letter No. "
+  },
+  {
+   "fieldname": "issuing_body",
+   "fieldtype": "Data",
+   "label": "Issuing Body"
+  },
+  {
+   "fieldname": "purpose_of_usage",
+   "fieldtype": "Data",
+   "label": "Purpose of usage"
+  },
+  {
+   "fieldname": "column_break_lfze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plot_area",
+   "fieldtype": "Data",
+   "label": "Plot Area"
+  },
+  {
+   "fieldname": "letter_date",
+   "fieldtype": "Date",
+   "label": "Letter Date"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "land_cost_and_valuation_section",
+   "fieldtype": "Section Break",
+   "label": "Land Cost and Valuation "
+  },
+  {
+   "fieldname": "total_cost_of_the_land_as_per_audited_financial_statements_rs",
+   "fieldtype": "Data",
+   "label": "Total Cost of the Land as per Audited Financial Statements (Rs.)"
+  },
+  {
+   "fieldname": "column_break_eunr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_of_the_land_as_per_sro_valuation",
+   "fieldtype": "Data",
+   "label": "Total Cost of the Land as per SRO Valuation"
+  },
+  {
+   "fieldname": "land_certificate_section",
+   "fieldtype": "Section Break",
+   "label": "Land Certificate "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-29 16:27:51.266365",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Land Use Certificate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

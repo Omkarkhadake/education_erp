@@ -22,13 +22,15 @@
  "fields": [
   {
    "fieldname": "plot_number",
-   "fieldtype": "Data",
-   "label": "Plot Number"
+   "fieldtype": "Link",
+   "label": "Plot Number",
+   "options": "Plot Area"
   },
   {
    "fieldname": "name_of_the_building",
-   "fieldtype": "Data",
-   "label": "Name of the Building"
+   "fieldtype": "Link",
+   "label": "Name of the Building",
+   "options": "Building Name"
   },
   {
    "fieldname": "room_category",
@@ -39,12 +41,12 @@
   {
    "fieldname": "floor_no",
    "fieldtype": "Data",
-   "label": "Floor No."
+   "label": "Floor Number"
   },
   {
    "fieldname": "room_no_drop_down",
    "fieldtype": "Data",
-   "label": "Room No. (drop down)"
+   "label": "Room Number"
   },
   {
    "fieldname": "room_type",
@@ -89,7 +91,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-23 17:02:47.714256",
+ "modified": "2024-07-30 09:56:37.558854",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Room Infrastructure",

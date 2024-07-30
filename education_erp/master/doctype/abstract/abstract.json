@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-30 09:36:56.908211",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "existing_buildup_area",
+  "build_up_area_approved",
+  "net_build_up_area",
+  "total_up_to_date_build_up_area",
+  "total_up_to_date_far_consumed"
+ ],
+ "fields": [
+  {
+   "fieldname": "existing_buildup_area",
+   "fieldtype": "Data",
+   "label": "Existing Built-up Area approved on all Floors (sqm.)"
+  },
+  {
+   "fieldname": "build_up_area_approved",
+   "fieldtype": "Data",
+   "label": "Built-up Area approved  (sqm.) (under Construction) "
+  },
+  {
+   "fieldname": "net_build_up_area",
+   "fieldtype": "Data",
+   "label": "Net Built-up Area Approved on all Floors (Sqm.)"
+  },
+  {
+   "fieldname": "total_up_to_date_build_up_area",
+   "fieldtype": "Data",
+   "label": "Total Up-to-date Built-up Area Approved on all Floors (Sqm.)"
+  },
+  {
+   "fieldname": "total_up_to_date_far_consumed",
+   "fieldtype": "Data",
+   "label": "Total Up-to-date FAR Consumed  (Sqm.)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 09:39:33.759726",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Abstract",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

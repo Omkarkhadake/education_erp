@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plot_number",
+ "creation": "2024-07-29 15:08:13.773242",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_information_section",
+  "plot_number",
+  "plot_area_in_acres",
+  "plot_area_in_sq_ft",
+  "plot_conversion_if_any",
+  "column_break_ogsh",
+  "plot_address",
+  "plot_type",
+  "plot_area_in_sqm",
+  "ownership_details_section",
+  "name_of_the_owner",
+  "official_email_address",
+  "landline_no_with_std_code",
+  "mobile_no",
+  "column_break_cqze",
+  "contact_person_name",
+  "address_of_the_owner",
+  "approved_maps_and_layouts_tab",
+  "demarcation_map",
+  "layout_plan__site_plan",
+  "column_break_uoht",
+  "khasra_plan",
+  "latitude_and_longitude_of_the_buildings"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Data",
+   "label": "Plot Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "plot_address",
+   "fieldtype": "Data",
+   "label": "Plot Address"
+  },
+  {
+   "fieldname": "plot_type",
+   "fieldtype": "Select",
+   "label": "Plot Type",
+   "options": "\nAgriculture\nNon- Agriculture"
+  },
+  {
+   "fieldname": "plot_area_in_acres",
+   "fieldtype": "Data",
+   "label": "Plot Area in Acres"
+  },
+  {
+   "fieldname": "plot_area_in_sqm",
+   "fieldtype": "Data",
+   "label": "Plot Area in Sqm."
+  },
+  {
+   "fieldname": "plot_area_in_sq_ft",
+   "fieldtype": "Data",
+   "label": "Plot Area in Sq. ft."
+  },
+  {
+   "fieldname": "plot_conversion_if_any",
+   "fieldtype": "Data",
+   "label": "Plot Conversion, if any"
+  },
+  {
+   "fieldname": "plot_information_section",
+   "fieldtype": "Section Break",
+   "label": "Plot Information"
+  },
+  {
+   "fieldname": "column_break_ogsh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ownership_details_section",
+   "fieldtype": "Section Break",
+   "label": "Ownership Details"
+  },
+  {
+   "fieldname": "name_of_the_owner",
+   "fieldtype": "Data",
+   "label": "Name of the Owner"
+  },
+  {
+   "fieldname": "official_email_address",
+   "fieldtype": "Data",
+   "label": "Official Email Address"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  },
+  {
+   "fieldname": "contact_person_name",
+   "fieldtype": "Data",
+   "label": "Contact Person Name"
+  },
+  {
+   "fieldname": "landline_no_with_std_code",
+   "fieldtype": "Data",
+   "label": "Landline No. with STD Code"
+  },
+  {
+   "fieldname": "address_of_the_owner",
+   "fieldtype": "Small Text",
+   "label": "Address of the Owner"
+  },
+  {
+   "fieldname": "column_break_cqze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_maps_and_layouts_tab",
+   "fieldtype": "Tab Break",
+   "label": "Approved Maps and Layouts"
+  },
+  {
+   "fieldname": "demarcation_map",
+   "fieldtype": "Data",
+   "label": "Demarcation Map"
+  },
+  {
+   "fieldname": "layout_plan__site_plan",
+   "fieldtype": "Data",
+   "label": "Layout Plan / Site Plan"
+  },
+  {
+   "fieldname": "column_break_uoht",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "khasra_plan",
+   "fieldtype": "Data",
+   "label": "Khasra Plan"
+  },
+  {
+   "fieldname": "latitude_and_longitude_of_the_buildings",
+   "fieldtype": "Data",
+   "label": "Latitude and Longitude of the Buildings"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-29 16:12:30.722720",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Plot Area",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

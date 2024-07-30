@@ -1,121 +1,174 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-07-23 16:25:47.007275",
+ "creation": "2024-07-30 09:59:50.172928",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "no_of_generators",
-  "no_of_pump_rooms",
-  "no_of_suction_tanks",
-  "no_of_drainage_chambers",
-  "no_of_vehicular_ramps",
-  "no_of_water_treatment_plants",
-  "no_of_meter_rooms",
-  "no_of_transformers",
-  "no_of_water_filtration_plants",
-  "no_of_lifts",
-  "no_of_fire_staircases",
-  "column_break_mgkj",
-  "no_of_terraces",
-  "overhead_tanks",
-  "septic_tanks",
-  "provisions_for_physically_challenged",
-  "solar_energy_panels_installed"
+  "name_of_the_building",
+  "no_of_floors",
+  "carpet_area_in_sqm",
+  "fsi_available",
+  "build_up_area_available",
+  "distance_from_water_course",
+  "distance_from_electric_lines_horizontal_in_mtrs",
+  "column_break_cpbv",
+  "year_of_construction",
+  "build_up_area",
+  "fsi_consumed",
+  "carpet_area_available_in_sqm",
+  "built_up_area_in_sq_ft",
+  "distance_from_electric_lines_vertical_in_mtrs",
+  "information_tab",
+  "electrification_work_completed",
+  "dimensions_of_the_building",
+  "flooring_completed",
+  "booster_fire_pumps",
+  "vicinity_of_aerodromes",
+  "column_break_fgqb",
+  "walls_and_paintings_completed",
+  "automatic_fire_detection_and_alarm_system",
+  "type_of_building",
+  "automatic_sprinkler_system"
  ],
  "fields": [
   {
-   "fieldname": "no_of_generators",
-   "fieldtype": "Data",
-   "label": "No. of Generators"
+   "fieldname": "name_of_the_building",
+   "fieldtype": "Link",
+   "label": "Name of the Building",
+   "options": "Building Name"
   },
   {
-   "fieldname": "no_of_pump_rooms",
-   "fieldtype": "Data",
-   "label": "No. of Pump Rooms"
+   "fieldname": "year_of_construction",
+   "fieldtype": "Date",
+   "label": "Year of Construction "
   },
   {
-   "fieldname": "no_of_suction_tanks",
+   "fieldname": "no_of_floors",
    "fieldtype": "Data",
-   "label": "No. of Suction Tanks"
+   "label": "No. of Floors"
   },
   {
-   "fieldname": "no_of_drainage_chambers",
+   "fieldname": "build_up_area",
    "fieldtype": "Data",
-   "label": "No. of Drainage Chambers"
+   "label": "Built-up Area in Sqm."
   },
   {
-   "fieldname": "no_of_vehicular_ramps",
+   "fieldname": "carpet_area_in_sqm",
    "fieldtype": "Data",
-   "label": "No. of Vehicular Ramps"
+   "label": "Carpet Area in Sqm."
   },
   {
-   "fieldname": "no_of_water_treatment_plants",
+   "fieldname": "fsi_consumed",
    "fieldtype": "Data",
-   "label": "No. of Water Treatment Plants"
+   "label": "FSI Consumed"
   },
   {
-   "fieldname": "no_of_meter_rooms",
+   "fieldname": "fsi_available",
    "fieldtype": "Data",
-   "label": "No. of Meter Rooms"
+   "label": "FSI Available"
   },
   {
-   "fieldname": "no_of_transformers",
+   "fieldname": "carpet_area_available_in_sqm",
    "fieldtype": "Data",
-   "label": "No. of Transformers"
+   "label": "Carpet Area Available in Sqm."
   },
   {
-   "fieldname": "no_of_water_filtration_plants",
+   "fieldname": "build_up_area_available",
    "fieldtype": "Data",
-   "label": "No. of Water Filtration Plants"
+   "label": "Built-up Area Available in Sqm."
   },
   {
-   "fieldname": "no_of_lifts",
+   "fieldname": "built_up_area_in_sq_ft",
    "fieldtype": "Data",
-   "label": "No. of Lifts"
+   "label": "Built-up Area in Sq. ft."
   },
   {
-   "fieldname": "no_of_fire_staircases",
-   "fieldtype": "Data",
-   "label": "No. of Fire Staircases"
+   "fieldname": "dimensions_of_the_building",
+   "fieldtype": "Select",
+   "label": "Dimensions of the Building",
+   "options": "\nGround Area\nLength, Height\nOpen Spaces"
   },
   {
-   "fieldname": "column_break_mgkj",
+   "fieldname": "flooring_completed",
+   "fieldtype": "Select",
+   "label": "Flooring Completed",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "electrification_work_completed",
+   "fieldtype": "Select",
+   "label": "Electrification Work completed",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "walls_and_paintings_completed",
+   "fieldtype": "Select",
+   "label": "Walls and Paintings Completed",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "type_of_building",
+   "fieldtype": "Select",
+   "label": "Type of Building",
+   "options": "\nHigh Rise Building\nMulti-stored Building"
+  },
+  {
+   "fieldname": "distance_from_water_course",
+   "fieldtype": "Data",
+   "label": "Distance from water course"
+  },
+  {
+   "fieldname": "distance_from_electric_lines_vertical_in_mtrs",
+   "fieldtype": "Data",
+   "label": "Distance from Electric Lines (Vertical) in Mtrs."
+  },
+  {
+   "fieldname": "distance_from_electric_lines_horizontal_in_mtrs",
+   "fieldtype": "Data",
+   "label": "Distance from Electric Lines (Horizontal) in Mtrs."
+  },
+  {
+   "fieldname": "automatic_fire_detection_and_alarm_system",
+   "fieldtype": "Select",
+   "label": "Automatic Fire Detection and Alarm System",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "automatic_sprinkler_system",
+   "fieldtype": "Select",
+   "label": "Automatic Sprinkler System",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "booster_fire_pumps",
+   "fieldtype": "Select",
+   "label": "Booster Fire Pumps",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "vicinity_of_aerodromes",
+   "fieldtype": "Select",
+   "label": "Vicinity of Aerodromes",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_cpbv",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "no_of_terraces",
-   "fieldtype": "Data",
-   "label": "No. of Terraces"
+   "fieldname": "information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Information"
   },
   {
-   "fieldname": "overhead_tanks",
-   "fieldtype": "Select",
-   "label": "Overhead Tanks ",
-   "options": "\nYes\nNo"
-  },
-  {
-   "fieldname": "septic_tanks",
-   "fieldtype": "Select",
-   "label": "Septic Tanks",
-   "options": "\nYes\nNo"
-  },
-  {
-   "fieldname": "provisions_for_physically_challenged",
-   "fieldtype": "Select",
-   "label": "Provisions for Physically Challenged",
-   "options": "\nYes\nNo"
-  },
-  {
-   "fieldname": "solar_energy_panels_installed",
-   "fieldtype": "Select",
-   "label": "Solar Energy Panels Installed",
-   "options": "\nYes\nNo"
+   "fieldname": "column_break_fgqb",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-23 16:28:30.387784",
+ "modified": "2024-07-30 10:11:07.729023",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Building Information",

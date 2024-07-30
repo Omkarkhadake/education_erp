@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-30 09:19:55.094948",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_number",
+  "purpose_of_payment",
+  "letter_number",
+  "premium_unit_rate_per_sqm",
+  "cheque_no__dd_no__neft__rtgs",
+  "mode_of_payment",
+  "receipt_number",
+  "bank_name",
+  "issuing_body",
+  "column_break_xvxh",
+  "plot_area",
+  "land_particulars",
+  "letter_date",
+  "amount_paid",
+  "cheque__dd___neft__rtgs_date",
+  "date_of_payment",
+  "receipt_date",
+  "issuing_authority"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Link",
+   "label": "Plot Number",
+   "options": "Plot Area"
+  },
+  {
+   "fieldname": "purpose_of_payment",
+   "fieldtype": "Data",
+   "label": "Purpose of Payment"
+  },
+  {
+   "fieldname": "land_particulars",
+   "fieldtype": "Data",
+   "label": "Land Particulars"
+  },
+  {
+   "fieldname": "letter_number",
+   "fieldtype": "Data",
+   "label": "Letter Number"
+  },
+  {
+   "fieldname": "letter_date",
+   "fieldtype": "Date",
+   "label": "Letter Date"
+  },
+  {
+   "fieldname": "plot_area",
+   "fieldtype": "Data",
+   "label": "Plot Area"
+  },
+  {
+   "fieldname": "premium_unit_rate_per_sqm",
+   "fieldtype": "Data",
+   "label": "Premium Unit Rate per Sqm."
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "label": "Amount Paid",
+   "non_negative": 1,
+   "options": "Company:company:default_currency",
+   "precision": "2"
+  },
+  {
+   "fieldname": "cheque_no__dd_no__neft__rtgs",
+   "fieldtype": "Data",
+   "label": "Cheque No. / DD No. / NEFT / RTGS"
+  },
+  {
+   "fieldname": "cheque__dd___neft__rtgs_date",
+   "fieldtype": "Date",
+   "label": "Cheque / DD /  NEFT / RTGS Date"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Data",
+   "label": "Mode of Payment"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "date_of_payment",
+   "fieldtype": "Date",
+   "label": "Date of Payment"
+  },
+  {
+   "fieldname": "receipt_number",
+   "fieldtype": "Data",
+   "label": "Receipt Number"
+  },
+  {
+   "fieldname": "receipt_date",
+   "fieldtype": "Date",
+   "label": "Receipt Date"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "issuing_body",
+   "fieldtype": "Data",
+   "label": "Issuing Body"
+  },
+  {
+   "fieldname": "column_break_xvxh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 09:24:52.671342",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Land Allotment Premium",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

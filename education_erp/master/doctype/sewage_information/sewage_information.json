@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-30 09:18:17.390495",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_number",
+  "sanction_letter_number",
+  "stp_details",
+  "column_break_mgwp",
+  "drainage_source",
+  "sanction_letter_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "drainage_source",
+   "fieldtype": "Data",
+   "label": "Drainage Source"
+  },
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Link",
+   "label": "Plot Number",
+   "options": "Plot Area"
+  },
+  {
+   "fieldname": "sanction_letter_number",
+   "fieldtype": "Data",
+   "label": "Sanction Letter Number"
+  },
+  {
+   "fieldname": "sanction_letter_date",
+   "fieldtype": "Date",
+   "label": "Sanction Letter Date"
+  },
+  {
+   "fieldname": "stp_details",
+   "fieldtype": "Data",
+   "label": "STP Details"
+  },
+  {
+   "fieldname": "column_break_mgwp",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 09:19:14.665126",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Sewage Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

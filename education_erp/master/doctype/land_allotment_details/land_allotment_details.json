@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plot_number",
+ "creation": "2024-07-29 15:47:59.792391",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "land_allotment_section",
+  "plot_number",
+  "letter_no",
+  "issuing_authority",
+  "details_of_additional_land_purchase",
+  "column_break_cdgm",
+  "net_plot_area_in_sqm",
+  "letter_date",
+  "issuing_body",
+  "alienation__sale__transfer__surrender_if_any",
+  "possession_receipts_section",
+  "plot_area_sqm",
+  "receipt_date",
+  "issuing_body_possession_receipt",
+  "column_break_iosx",
+  "receipt_no",
+  "issuing_authority_possession_receipt"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Link",
+   "label": "Plot Number",
+   "options": "Plot Area",
+   "unique": 1
+  },
+  {
+   "fieldname": "letter_no",
+   "fieldtype": "Data",
+   "label": "Letter No."
+  },
+  {
+   "fieldname": "letter_date",
+   "fieldtype": "Date",
+   "label": "Letter Date"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "issuing_body",
+   "fieldtype": "Data",
+   "label": "Issuing Body"
+  },
+  {
+   "fieldname": "details_of_additional_land_purchase",
+   "fieldtype": "Select",
+   "label": "Details of Additional Land Purchase",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "alienation__sale__transfer__surrender_if_any",
+   "fieldtype": "Data",
+   "label": "Alienation / Sale / Transfer / Surrender, if any"
+  },
+  {
+   "fieldname": "net_plot_area_in_sqm",
+   "fieldtype": "Data",
+   "label": "Net Plot Area (in Sqm.)"
+  },
+  {
+   "fieldname": "column_break_cdgm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "possession_receipts_section",
+   "fieldtype": "Section Break",
+   "label": "Possession Receipts"
+  },
+  {
+   "fieldname": "plot_area_sqm",
+   "fieldtype": "Data",
+   "label": "Plot Area (Sqm.)"
+  },
+  {
+   "fieldname": "receipt_date",
+   "fieldtype": "Data",
+   "label": "Receipt Date"
+  },
+  {
+   "fieldname": "issuing_body_possession_receipt",
+   "fieldtype": "Data",
+   "label": "Issuing Body"
+  },
+  {
+   "fieldname": "column_break_iosx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receipt_no",
+   "fieldtype": "Data",
+   "label": "Receipt No. "
+  },
+  {
+   "fieldname": "issuing_authority_possession_receipt",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "land_allotment_section",
+   "fieldtype": "Section Break",
+   "label": "Land Allotment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-29 15:54:57.808317",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Land Allotment Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

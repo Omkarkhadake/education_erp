@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-29 16:29:42.854840",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plot_number",
+  "plan_approval_date",
+  "purpose_of_charges",
+  "amount_payable",
+  "amount_paid_rs",
+  "bank_name",
+  "cheque__dd_no__neft__rtgs_no",
+  "cheque__dd___neft__rtgs_date",
+  "period_of_extension_from",
+  "column_break_edtl",
+  "plan_approval_number",
+  "applicable_start_date_for_construction",
+  "applicable_date_of_completion",
+  "mode_of_payment",
+  "receipt_number",
+  "receipt_date",
+  "extension_approval_letter_number",
+  "extension_approval_letter_date",
+  "issuing_authority",
+  "issuing_body",
+  "period_of_extension_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot_number",
+   "fieldtype": "Link",
+   "label": "Plot Number",
+   "options": "Plot Area"
+  },
+  {
+   "fieldname": "plan_approval_date",
+   "fieldtype": "Date",
+   "label": "Plan Approval Date"
+  },
+  {
+   "fieldname": "purpose_of_charges",
+   "fieldtype": "Currency",
+   "label": "Purpose of Charges"
+  },
+  {
+   "fieldname": "amount_payable",
+   "fieldtype": "Currency",
+   "label": "Amount Payable"
+  },
+  {
+   "fieldname": "amount_paid_rs",
+   "fieldtype": "Currency",
+   "label": "Amount Paid (Rs.)"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "cheque__dd_no__neft__rtgs_no",
+   "fieldtype": "Data",
+   "label": "Cheque / DD No. / NEFT / RTGS No. "
+  },
+  {
+   "fieldname": "cheque__dd___neft__rtgs_date",
+   "fieldtype": "Data",
+   "label": "Cheque / DD /  NEFT / RTGS Date"
+  },
+  {
+   "fieldname": "period_of_extension_from",
+   "fieldtype": "Date",
+   "label": "Period of Extension From"
+  },
+  {
+   "fieldname": "column_break_edtl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan_approval_number",
+   "fieldtype": "Data",
+   "label": "Plan Approval Number"
+  },
+  {
+   "fieldname": "applicable_start_date_for_construction",
+   "fieldtype": "Date",
+   "label": "Applicable Start Date for Construction "
+  },
+  {
+   "fieldname": "applicable_date_of_completion",
+   "fieldtype": "Date",
+   "label": "Applicable Date of Completion "
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Data",
+   "label": "Mode of Payment"
+  },
+  {
+   "fieldname": "receipt_number",
+   "fieldtype": "Data",
+   "label": "Receipt Number"
+  },
+  {
+   "fieldname": "receipt_date",
+   "fieldtype": "Date",
+   "label": "Receipt Date"
+  },
+  {
+   "fieldname": "extension_approval_letter_number",
+   "fieldtype": "Data",
+   "label": "Extension Approval Letter Number"
+  },
+  {
+   "fieldname": "extension_approval_letter_date",
+   "fieldtype": "Date",
+   "label": "Extension Approval Letter Date"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "issuing_body",
+   "fieldtype": "Data",
+   "label": "Issuing Body"
+  },
+  {
+   "fieldname": "period_of_extension_to",
+   "fieldtype": "Date",
+   "label": "Period of Extension To"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-29 16:33:21.848996",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Charges for Revalidation of Drawings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-29 16:03:05.617430",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "existing_plot_number",
+  "amalgamated_plot_no",
+  "total_plot_area_after_amalgamation_in_sqm",
+  "issuing_authority",
+  "brief_document_particulars",
+  "letter_date",
+  "letter_no",
+  "column_break_siyh",
+  "net_plot_area_of_existing_plot_in_sqm",
+  "net_plot_area_of_amalgamated_plot_in_sqm",
+  "issuing_body",
+  "reason_for_amalgamation",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "existing_plot_number",
+   "fieldtype": "Link",
+   "label": "Existing Plot Number",
+   "options": "Plot Area"
+  },
+  {
+   "fieldname": "net_plot_area_of_existing_plot_in_sqm",
+   "fieldtype": "Data",
+   "label": "Net Plot Area of Existing Plot in Sqm."
+  },
+  {
+   "fieldname": "amalgamated_plot_no",
+   "fieldtype": "Link",
+   "label": "Amalgamated Plot No.",
+   "options": "Plot Area"
+  },
+  {
+   "fieldname": "net_plot_area_of_amalgamated_plot_in_sqm",
+   "fieldtype": "Data",
+   "label": "Net Plot Area of Amalgamated Plot in Sqm."
+  },
+  {
+   "fieldname": "total_plot_area_after_amalgamation_in_sqm",
+   "fieldtype": "Data",
+   "label": "Total Plot Area after Amalgamation in Sqm."
+  },
+  {
+   "fieldname": "letter_no",
+   "fieldtype": "Data",
+   "label": "Letter No. "
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Data",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "issuing_body",
+   "fieldtype": "Data",
+   "label": "Issuing Body"
+  },
+  {
+   "fieldname": "brief_document_particulars",
+   "fieldtype": "Data",
+   "label": "Brief Document Particulars"
+  },
+  {
+   "fieldname": "reason_for_amalgamation",
+   "fieldtype": "Data",
+   "label": "Reason for Amalgamation"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "letter_date",
+   "fieldtype": "Date",
+   "label": "Letter Date"
+  },
+  {
+   "fieldname": "column_break_siyh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-29 16:10:26.989247",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Amalgamation of Plot",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

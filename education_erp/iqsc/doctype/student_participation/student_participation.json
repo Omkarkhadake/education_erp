@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-31 10:58:25.418101",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "class",
+  "department",
+  "name_of_the_student",
+  "name_of_the_event",
+  "details_of_organizing_instituteorganization",
+  "event_type",
+  "statenatint",
+  "starting_date_of_the_event",
+  "end_date_of_the_event",
+  "email",
+  "contact_number",
+  "link_of_relevant_document"
+ ],
+ "fields": [
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "name_of_the_student",
+   "fieldtype": "Link",
+   "label": "Name of the Student",
+   "options": "Student"
+  },
+  {
+   "fieldname": "name_of_the_event",
+   "fieldtype": "Data",
+   "label": "Name of the Event"
+  },
+  {
+   "fieldname": "details_of_organizing_instituteorganization",
+   "fieldtype": "Data",
+   "label": "Details of Organizing Institute/Organization"
+  },
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Data",
+   "label": "Event Type"
+  },
+  {
+   "fieldname": "statenatint",
+   "fieldtype": "Data",
+   "label": "State/Nat/Int"
+  },
+  {
+   "fieldname": "starting_date_of_the_event",
+   "fieldtype": "Date",
+   "label": "Starting Date of the Event"
+  },
+  {
+   "fieldname": "end_date_of_the_event",
+   "fieldtype": "Date",
+   "label": "End Date of the Event"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email of the Event Co-ordinator"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "link_of_relevant_document",
+   "fieldtype": "Attach",
+   "label": "Link of Relevant Document"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-31 11:02:05.624030",
+ "modified_by": "Administrator",
+ "module": "IQSC",
+ "name": "Student Participation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

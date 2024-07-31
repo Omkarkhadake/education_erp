@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-31 09:13:29.669201",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_tab",
+  "user_id",
+  "program",
+  "name_of_the_industryinstitute_of_the_resource_personal",
+  "designation",
+  "column_break_vmkp",
+  "name_of_the_resource_personal",
+  "department",
+  "contact_number",
+  "name_of_the_course",
+  "event_details_tab",
+  "select_event_name",
+  "name_of_the_event",
+  "start_date",
+  "duration",
+  "number_of_students_in_the_class",
+  "class",
+  "column_break_ilea",
+  "certificates_distributed",
+  "relevance_to_pos_psos_gap",
+  "end_date",
+  "_students",
+  "count_of_students_attended",
+  "attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "name_of_the_course",
+   "fieldtype": "Link",
+   "label": "Name of the Course",
+   "options": "Course"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "User"
+  },
+  {
+   "fetch_from": "user_id.full_name",
+   "fieldname": "name_of_the_resource_personal",
+   "fieldtype": "Data",
+   "label": "Name of the Resource Personal"
+  },
+  {
+   "fieldname": "name_of_the_industryinstitute_of_the_resource_personal",
+   "fieldtype": "Data",
+   "label": "Name of the Industry/Institute"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "relevance_to_pos_psos_gap",
+   "fieldtype": "Data",
+   "label": "Relevance to POs, PSOs (GAP)"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "number_of_students_in_the_class",
+   "fieldtype": "Data",
+   "label": "Number of Students in the Class"
+  },
+  {
+   "fieldname": "count_of_students_attended",
+   "fieldtype": "Data",
+   "label": "Count of Students Attended"
+  },
+  {
+   "fieldname": "_students",
+   "fieldtype": "Data",
+   "label": "% Students"
+  },
+  {
+   "fieldname": "certificates_distributed",
+   "fieldtype": "Select",
+   "label": "Certificates Distributed",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "column_break_vmkp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_event_name",
+   "fieldtype": "Select",
+   "label": "Select Event Name",
+   "options": "\nAugmentation\nAdd-on\nValue-added\nExpert-Guest-Lect\nIndustrial-visits\nStudent-Assco-Activities"
+  },
+  {
+   "depends_on": "eval:doc.select_event_name == 'Student-Assco-Activities';",
+   "fieldname": "name_of_the_event",
+   "fieldtype": "Data",
+   "label": "Name of the Event"
+  },
+  {
+   "fieldname": "overview_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "event_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Event Details"
+  },
+  {
+   "fieldname": "column_break_ilea",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-31 10:06:59.524555",
+ "modified_by": "Administrator",
+ "module": "IQSC",
+ "name": "Event Target",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

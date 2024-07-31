@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-30 14:04:15.659256",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "maximum_sanctioned_intake",
+  "tfws_intake",
+  "ews_intake",
+  "jk_intake",
+  "jksss_intake",
+  "others_if_any",
+  "column_break_jwkr",
+  "total_sanctioned_intake",
+  "over_and_above_sanctioned_intake",
+  "grand_total_of_student_intake",
+  "direct_second_year_dse",
+  "estimated_fee_structure"
+ ],
+ "fields": [
+  {
+   "fieldname": "maximum_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Maximum Sanctioned Intake"
+  },
+  {
+   "fieldname": "tfws_intake",
+   "fieldtype": "Data",
+   "label": "TFWS Intake"
+  },
+  {
+   "fieldname": "ews_intake",
+   "fieldtype": "Data",
+   "label": "EWS Intake"
+  },
+  {
+   "fieldname": "jk_intake",
+   "fieldtype": "Data",
+   "label": "JK Intake"
+  },
+  {
+   "fieldname": "jksss_intake",
+   "fieldtype": "Data",
+   "label": "JKSSS Intake"
+  },
+  {
+   "fieldname": "others_if_any",
+   "fieldtype": "Data",
+   "label": "Others, if any "
+  },
+  {
+   "fieldname": "total_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Total Sanctioned Intake"
+  },
+  {
+   "fieldname": "column_break_jwkr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "over_and_above_sanctioned_intake",
+   "fieldtype": "Data",
+   "label": "Over and above Sanctioned Intake"
+  },
+  {
+   "fieldname": "grand_total_of_student_intake",
+   "fieldtype": "Data",
+   "label": "Grand Total of Student Intake"
+  },
+  {
+   "fieldname": "direct_second_year_dse",
+   "fieldtype": "Data",
+   "label": "Direct Second Year (DSE) "
+  },
+  {
+   "fieldname": "estimated_fee_structure",
+   "fieldtype": "Data",
+   "label": "Estimated Fee Structure"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 14:05:57.713058",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Student Intake",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

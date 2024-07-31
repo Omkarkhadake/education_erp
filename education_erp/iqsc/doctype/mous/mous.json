@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-31 11:05:08.677443",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "organization_with_which_mou_is_signed",
+  "month_and__year_of_signing_mou",
+  "duration",
+  "list_the__actual__activities_conducted_under_the_mou",
+  "number_of_students_participated_under_mous",
+  "number_of_teachers_participated_under_mous",
+  "link_of_relevant_document"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization_with_which_mou_is_signed",
+   "fieldtype": "Data",
+   "label": "Organization with which MoU is signed"
+  },
+  {
+   "fieldname": "month_and__year_of_signing_mou",
+   "fieldtype": "Date",
+   "label": "Month and  Year of signing MoU"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "list_the__actual__activities_conducted_under_the_mou",
+   "fieldtype": "Data",
+   "label": "List the  actual  activities conducted under the MoU"
+  },
+  {
+   "fieldname": "number_of_students_participated_under_mous",
+   "fieldtype": "Data",
+   "label": "Number of students participated under MoUs"
+  },
+  {
+   "fieldname": "number_of_teachers_participated_under_mous",
+   "fieldtype": "Data",
+   "label": "Number of teachers participated under MoUs"
+  },
+  {
+   "fieldname": "link_of_relevant_document",
+   "fieldtype": "Attach",
+   "label": "Link of relevant document"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-31 11:06:40.846580",
+ "modified_by": "Administrator",
+ "module": "IQSC",
+ "name": "MoUs",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

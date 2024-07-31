@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-31 10:45:32.890030",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title_of_project",
+  "sponsored_company_details",
+  "external_guide_name",
+  "qualification__experience",
+  "email_id",
+  "column_break_ehdb",
+  "area_of_project",
+  "mode_of_sponsorship",
+  "contact_details_of_external_guide",
+  "name_of_student",
+  "internal_guide_name",
+  "link_of_relevant_document"
+ ],
+ "fields": [
+  {
+   "fieldname": "title_of_project",
+   "fieldtype": "Data",
+   "label": "Title of Project"
+  },
+  {
+   "fieldname": "name_of_student",
+   "fieldtype": "Link",
+   "label": "Name of Student",
+   "options": "Student"
+  },
+  {
+   "fieldname": "area_of_project",
+   "fieldtype": "Data",
+   "label": "Area of Project"
+  },
+  {
+   "fieldname": "sponsored_company_details",
+   "fieldtype": "Data",
+   "label": "Sponsored Company Details"
+  },
+  {
+   "fieldname": "mode_of_sponsorship",
+   "fieldtype": "Select",
+   "label": "Mode of Sponsorship",
+   "options": "\nTechnical\nFinancial"
+  },
+  {
+   "fieldname": "external_guide_name",
+   "fieldtype": "Data",
+   "label": "External Guide Name"
+  },
+  {
+   "fieldname": "qualification__experience",
+   "fieldtype": "Data",
+   "label": "Qualification / Experience"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email id"
+  },
+  {
+   "fieldname": "contact_details_of_external_guide",
+   "fieldtype": "Data",
+   "label": "Contact Details of External Guide "
+  },
+  {
+   "fieldname": "internal_guide_name",
+   "fieldtype": "Data",
+   "label": "Internal Guide Name"
+  },
+  {
+   "fieldname": "link_of_relevant_document",
+   "fieldtype": "Attach",
+   "label": "Link of Relevant Document"
+  },
+  {
+   "fieldname": "column_break_ehdb",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-31 10:49:04.049048",
+ "modified_by": "Administrator",
+ "module": "IQSC",
+ "name": "Sponsored-Projects",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

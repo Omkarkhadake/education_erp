@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-30 14:01:52.458068",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "maharashtra_seats_65",
+  "institute_level_seats_20",
+  "ews_intake",
+  "jksss_intake",
+  "direct_second_year_dse",
+  "column_break_svbg",
+  "all_india_seats_15",
+  "tfws_intake",
+  "jk_intake",
+  "others_if_any"
+ ],
+ "fields": [
+  {
+   "fieldname": "maharashtra_seats_65",
+   "fieldtype": "Data",
+   "label": "Maharashtra Seats (65%)"
+  },
+  {
+   "fieldname": "institute_level_seats_20",
+   "fieldtype": "Data",
+   "label": "Institute Level Seats (20%)"
+  },
+  {
+   "fieldname": "ews_intake",
+   "fieldtype": "Data",
+   "label": "EWS Intake "
+  },
+  {
+   "fieldname": "jksss_intake",
+   "fieldtype": "Data",
+   "label": "JKSSS Intake"
+  },
+  {
+   "fieldname": "direct_second_year_dse",
+   "fieldtype": "Data",
+   "label": "Direct Second Year (DSE) "
+  },
+  {
+   "fieldname": "column_break_svbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "all_india_seats_15",
+   "fieldtype": "Data",
+   "label": "All India Seats (15%)"
+  },
+  {
+   "fieldname": "tfws_intake",
+   "fieldtype": "Data",
+   "label": "TFWS Intake"
+  },
+  {
+   "fieldname": "jk_intake",
+   "fieldtype": "Data",
+   "label": "JK Intake"
+  },
+  {
+   "fieldname": "others_if_any",
+   "fieldtype": "Data",
+   "label": "Others, if any"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 14:03:51.239593",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "DTE Seat Allocation Percentages",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

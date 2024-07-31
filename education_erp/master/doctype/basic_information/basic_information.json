@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-30 13:52:19.556585",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_trust__society",
+  "year_of_establishment",
+  "type_of_institution_by_gender",
+  "total_campus_area_in_acres",
+  "aicte_permanent_id",
+  "aishe_code",
+  "university_examination_code",
+  "national_digital_library_ndl_no",
+  "column_break_tzpm",
+  "name_of_the_institution",
+  "location_of_the_college",
+  "type_of_institution_by_shift",
+  "total_built_up_area",
+  "dte_code",
+  "university_affiliation_code",
+  "ara_code",
+  "national_academic_depository_nad_no",
+  "institute_mission_and_vision_section",
+  "institute_vision",
+  "institute_mission",
+  "quality_policy",
+  "short_and_long_goals_section",
+  "short_term_goals",
+  "long_term_goals"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_trust__society",
+   "fieldtype": "Data",
+   "label": "Name of the Trust / Society"
+  },
+  {
+   "fieldname": "name_of_the_institution",
+   "fieldtype": "Link",
+   "label": "Name of the Institution",
+   "options": "Company"
+  },
+  {
+   "fieldname": "year_of_establishment",
+   "fieldtype": "Date",
+   "label": "Year of Establishment"
+  },
+  {
+   "fieldname": "location_of_the_college",
+   "fieldtype": "Select",
+   "label": "Location of the College",
+   "options": "\nUrban\nRural With add Feature"
+  },
+  {
+   "fieldname": "type_of_institution_by_gender",
+   "fieldtype": "Select",
+   "label": "Type of Institution by Gender",
+   "options": "\nWomen\nCo-Ed"
+  },
+  {
+   "fieldname": "type_of_institution_by_shift",
+   "fieldtype": "Select",
+   "label": "Type of Institution by Shift",
+   "options": "\nRegular Shift\nSecond Shift\nNight Shift"
+  },
+  {
+   "fieldname": "institute_vision",
+   "fieldtype": "Text Editor",
+   "label": "Institute Vision"
+  },
+  {
+   "fieldname": "quality_policy",
+   "fieldtype": "Text Editor",
+   "label": "Quality Policy"
+  },
+  {
+   "fieldname": "long_term_goals",
+   "fieldtype": "Text Editor",
+   "label": "Long Term Goals"
+  },
+  {
+   "fieldname": "short_term_goals",
+   "fieldtype": "Text Editor",
+   "label": "Short Term Goals"
+  },
+  {
+   "fieldname": "total_campus_area_in_acres",
+   "fieldtype": "Data",
+   "label": "Total Campus Area (in Acres)"
+  },
+  {
+   "fieldname": "total_built_up_area",
+   "fieldtype": "Data",
+   "label": "Total Built-up Area (in Sq. Mtrs.)"
+  },
+  {
+   "fieldname": "aicte_permanent_id",
+   "fieldtype": "Data",
+   "label": "AICTE Permanent ID"
+  },
+  {
+   "fieldname": "dte_code",
+   "fieldtype": "Data",
+   "label": "DTE Code"
+  },
+  {
+   "fieldname": "aishe_code",
+   "fieldtype": "Data",
+   "label": "AISHE Code"
+  },
+  {
+   "fieldname": "university_affiliation_code",
+   "fieldtype": "Data",
+   "label": "University Affiliation Code"
+  },
+  {
+   "fieldname": "university_examination_code",
+   "fieldtype": "Data",
+   "label": "University Examination Code"
+  },
+  {
+   "fieldname": "ara_code",
+   "fieldtype": "Data",
+   "label": "ARA Code"
+  },
+  {
+   "fieldname": "national_digital_library_ndl_no",
+   "fieldtype": "Data",
+   "label": "National Digital Library (NDL) No."
+  },
+  {
+   "fieldname": "national_academic_depository_nad_no",
+   "fieldtype": "Data",
+   "label": "National Academic Depository (NAD) No."
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "short_and_long_goals_section",
+   "fieldtype": "Section Break",
+   "label": "Short Term and Long Term Goals"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "institute_mission_and_vision_section",
+   "fieldtype": "Section Break",
+   "label": "Institute Mission and Vision"
+  },
+  {
+   "fieldname": "institute_mission",
+   "fieldtype": "Text Editor",
+   "label": "Institute Mission"
+  },
+  {
+   "fieldname": "column_break_tzpm",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 14:01:23.290505",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Basic Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

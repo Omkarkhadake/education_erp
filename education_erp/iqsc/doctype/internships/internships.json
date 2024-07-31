@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-31 10:54:07.744847",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "class",
+  "name_of_student",
+  "name_of_industry_company",
+  "duration",
+  "supported_by_department",
+  "faculty_user_id",
+  "faculty_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "name_of_student",
+   "fieldtype": "Link",
+   "label": "Name of Student ",
+   "options": "Student"
+  },
+  {
+   "fieldname": "name_of_industry_company",
+   "fieldtype": "Data",
+   "label": "Name of Industry/ Company\u00a0"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "supported_by_department",
+   "fieldtype": "Select",
+   "label": "Supported by Department",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "faculty_user_id",
+   "fieldtype": "Link",
+   "label": "Faculty User Id",
+   "options": "User"
+  },
+  {
+   "fetch_from": "faculty_user_id.full_name",
+   "fieldname": "faculty_name",
+   "fieldtype": "Data",
+   "label": "Faculty Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-31 10:55:48.502958",
+ "modified_by": "Administrator",
+ "module": "IQSC",
+ "name": "Internships",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

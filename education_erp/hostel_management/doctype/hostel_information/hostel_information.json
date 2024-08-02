@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-01 09:05:00.844082",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_hostel_building",
+  "number_of_floors",
+  "occupancy_type",
+  "room_number",
+  "room_build_up_area_in_sqm",
+  "address",
+  "column_break_slwp",
+  "plot_number",
+  "number_of_rooms_on_each_floor",
+  "allocation",
+  "total_number_of_beds",
+  "room_carpet_area_in_sqm"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_hostel_building",
+   "fieldtype": "Link",
+   "label": "Name of Hostel Building",
+   "options": "Building Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "name_of_hostel_building.plot_no",
+   "fieldname": "plot_number",
+   "fieldtype": "Data",
+   "label": "Plot Number"
+  },
+  {
+   "fetch_from": "name_of_hostel_building.no_of_floors",
+   "fieldname": "number_of_floors",
+   "fieldtype": "Data",
+   "label": "Number of Floors"
+  },
+  {
+   "fetch_from": "name_of_hostel_building.total_no_of_rooms_on_each_floor",
+   "fieldname": "number_of_rooms_on_each_floor",
+   "fieldtype": "Data",
+   "label": "Number of Rooms on each floor"
+  },
+  {
+   "fieldname": "occupancy_type",
+   "fieldtype": "Data",
+   "label": "Occupancy Type"
+  },
+  {
+   "fieldname": "allocation",
+   "fieldtype": "Select",
+   "label": "Allocation",
+   "options": "\nBoys\nGirls\nStaff\nVisitors"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Data",
+   "label": "Room Number"
+  },
+  {
+   "fieldname": "total_number_of_beds",
+   "fieldtype": "Data",
+   "label": "Total Number of Beds"
+  },
+  {
+   "fetch_from": "name_of_hostel_building.room_build_up_area",
+   "fieldname": "room_build_up_area_in_sqm",
+   "fieldtype": "Data",
+   "label": "Room Build up Area in Sqm."
+  },
+  {
+   "fetch_from": "name_of_hostel_building.room_carpet_area_in_sqm",
+   "fieldname": "room_carpet_area_in_sqm",
+   "fieldtype": "Data",
+   "label": "Room Carpet Area in Sqm."
+  },
+  {
+   "fieldname": "column_break_slwp",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-01 09:37:58.402803",
+ "modified_by": "Administrator",
+ "module": "Hostel Management",
+ "name": "Hostel Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

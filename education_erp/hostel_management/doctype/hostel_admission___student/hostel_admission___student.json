@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-01 09:51:51.234498",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_student",
+  "date_of_confirmation",
+  "program",
+  "check_in_date",
+  "student_irn_number",
+  "bed_status",
+  "column_break_glat",
+  "date_of_admission",
+  "department",
+  "applicable_academic_semester",
+  "check_out_date",
+  "room_status",
+  "personal_details_tab",
+  "mobile_number",
+  "father_name",
+  "mother_name",
+  "local_gordian_name",
+  "column_break_jogq",
+  "email_id",
+  "father_mobile_number",
+  "mother_mobile_number",
+  "local_gordian_mobile_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_student",
+   "fieldtype": "Link",
+   "label": "Name of Student",
+   "options": "Student"
+  },
+  {
+   "fieldname": "date_of_admission",
+   "fieldtype": "Date",
+   "label": "Date of Admission"
+  },
+  {
+   "fieldname": "date_of_confirmation",
+   "fieldtype": "Date",
+   "label": "Date of Confirmation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "applicable_academic_semester",
+   "fieldtype": "Link",
+   "label": "Applicable Academic Semester",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "check_in_date",
+   "fieldtype": "Date",
+   "label": "Check In Date"
+  },
+  {
+   "fieldname": "check_out_date",
+   "fieldtype": "Date",
+   "label": "Check Out Date"
+  },
+  {
+   "fieldname": "column_break_glat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "personal_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name"
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother Name"
+  },
+  {
+   "fieldname": "local_gordian_name",
+   "fieldtype": "Data",
+   "label": "Local Gordian Name"
+  },
+  {
+   "fieldname": "column_break_jogq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "father_mobile_number",
+   "fieldtype": "Data",
+   "label": "Father Mobile Number"
+  },
+  {
+   "fieldname": "mother_mobile_number",
+   "fieldtype": "Data",
+   "label": "Mother Mobile Number"
+  },
+  {
+   "fieldname": "local_gordian_mobile_number",
+   "fieldtype": "Data",
+   "label": "Local Gordian Mobile Number"
+  },
+  {
+   "fieldname": "student_irn_number",
+   "fieldtype": "Data",
+   "label": "Student IRN Number"
+  },
+  {
+   "fieldname": "bed_status",
+   "fieldtype": "Select",
+   "label": "Bed Status",
+   "options": "\nOccupied\nVacant"
+  },
+  {
+   "fieldname": "room_status",
+   "fieldtype": "Select",
+   "label": "Room Status",
+   "options": "\nOccupied\nVacant\nPartially Occupied"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-01 10:06:15.757605",
+ "modified_by": "Administrator",
+ "module": "Hostel Management",
+ "name": "Hostel Admission - Student",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

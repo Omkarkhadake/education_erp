@@ -13,6 +13,7 @@
   "distance_from_water_course",
   "distance_from_electric_lines_horizontal_in_mtrs",
   "column_break_cpbv",
+  "plot_number",
   "year_of_construction",
   "build_up_area",
   "fsi_consumed",
@@ -164,11 +165,17 @@
   {
    "fieldname": "column_break_fgqb",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "name_of_the_building.plot_no",
+   "fieldname": "plot_number",
+   "fieldtype": "Data",
+   "label": "Plot Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-30 10:11:07.729023",
+ "modified": "2024-08-01 09:09:15.066722",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Building Information",

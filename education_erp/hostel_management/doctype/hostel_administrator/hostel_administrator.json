@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-01 09:38:39.997907",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "mobile_number",
+  "extension_number",
+  "hostel_name",
+  "hostel_room_number",
+  "column_break_sxle",
+  "name1",
+  "landline_number",
+  "email",
+  "floor_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "User"
+  },
+  {
+   "fetch_from": "user_id.full_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "landline_number",
+   "fieldtype": "Data",
+   "label": "Landline Number"
+  },
+  {
+   "fieldname": "extension_number",
+   "fieldtype": "Data",
+   "label": "Extension Number"
+  },
+  {
+   "fieldname": "hostel_room_number",
+   "fieldtype": "Data",
+   "label": "Hostel Room Number"
+  },
+  {
+   "fieldname": "hostel_name",
+   "fieldtype": "Data",
+   "label": "Hostel Name"
+  },
+  {
+   "fieldname": "floor_number",
+   "fieldtype": "Data",
+   "label": "Floor Number"
+  },
+  {
+   "fieldname": "column_break_sxle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-01 09:42:31.332776",
+ "modified_by": "Administrator",
+ "module": "Hostel Management",
+ "name": "Hostel Administrator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
